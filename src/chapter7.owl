@@ -1,0 +1,2734 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2011/7/Ontology1313444335622.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/ontologies/2011/7/Ontology1313444335622.owl">
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/ontologies/2011/7/Ontology1313444335622.owl#"/>
+    <Prefix name="Ontology1313444335622" IRI="http://www.semanticweb.org/ontologies/2011/7/Ontology1313444335622.owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Agriculture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Archaeologist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Architecture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Art"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Artifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Artificial_Mound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asian_Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Baltic_or_Balkan_Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bladelet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bowl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brittle_Rachis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brush_Hut"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Built_Walls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bull_Horns"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Burial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Characteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Circular_Burial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Circular_Stone_Built_Structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Circular_Structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Classification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Climate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Climate_Condition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Climatic_Stress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Communal_Structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Community"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crescent_Shaped_Bladelet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decorated_Ground_Stone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dispersed_Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dog_Skeleton"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Domesticated_Plant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Domestication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dry_Summers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Earliest_Pottery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Earliest_Stone_Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Early_Neolithic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Europe_Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#European_Romance_Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Excellent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Farmers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Farming_Communities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Figurine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fresco"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Geometric_Kebaran_Site"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Germanic_Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Global_Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Goddess_Figurine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grooved_Stone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Herd_Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#House"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#House_with_Built_Walls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#House_with_Sunken_Walls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human_Skull"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hunter-Gatherers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hunting_Tool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hypothesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Indo-European_Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kebaran_Site"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LBK"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LBK_Site"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Large_Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Large_Communal_Structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Large_Structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Large_Village"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Late_Neolithic_Site"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Linear_Band_Keramik"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Little_Ice_Age"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lunate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Major"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mass_Grave"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mediterranean_Climate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mesolithic_Site"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Middle_East_Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Minor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mortar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mud_Brick"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mud_Brick_Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Natufian_Settlement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Natufian_Site"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ohalo_Organic_Remains"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Onset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organic_Remains"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oval_Stone_Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Painting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Part_of_Plant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Period"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Personal_Ornament"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pestle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plant_Remains"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plastered_Skull"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Polish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pottery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pre-Pottery_Neolithic_A_Site"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Preservation_Quality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rachis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rapid_Onset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Remains"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ritual_Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sculpture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sea_Shell"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Semi-subterranean_Structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Settlement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shaft_Straightener"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shell_Bead"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sickle_Polish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Site"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skeleton"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Slavic_Languages"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stone_Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stone_Tool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Study_of_Agriculture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sunken_Walls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Technology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Theory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tools_With_Pieces"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tough_Rachis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Village"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Walls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wild_Plant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Winter_Rains"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#open-park_woodlands"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vegitation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#woodlands"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#broad_range_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#can_contain"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#can_have"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#caused"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#caused_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#characteristic_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#characterized_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#collected"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#component_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#constructed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#created"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#decorated_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#developed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#devolped_during"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#divided_into"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#domesticated"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#domestication_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#earliest_farmers_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#earliest_large_structure_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#found"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_classification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_climate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_component"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_concept"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_effect_on"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_house"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_onset"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_period"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_polish"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_preservation_quality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_remains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_theory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_vegitation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_vegitation_max"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_vegitation_min"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_walls"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#holds"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hunted"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hunted_mostly"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#impacted"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_linked_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#links"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#located_across"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#located_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#made_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#number_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#occurred_during"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#reduced"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#reduced_number"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#reduced_size"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#reduction_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#size_of_buildings"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#smaller"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#subsisting_on"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#suggests_domestication_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#used_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#used_wide_range_of"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#height_in_meters"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#is_peaceful"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#number_of_buildings"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#was_earliest"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#years_ago"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#years_ago_ended"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#years_ago_started"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Abu_Hureyra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Barely"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bird"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bitter_Vetch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Catalhoyuk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cattle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Central_Europe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Central_Turkey"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chick_Peas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Danube_River"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dog"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dutch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Earliest_Pottery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Early_Neolithic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#English"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ester_Bosrup"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Euphrates_River"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Europe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fertile_Cresent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gazelle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#German"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Germany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Goat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gordon_Childe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Israel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jerf_el_Ahmar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jericho"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jericho_Tower"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jordan_Valley"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kebaran_and_Geometric_Kebaran"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Konya_Plain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Language_Dispersal_Hypothesis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Late_Neolithic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lentils"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lepenski_Vir"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mallaha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Marshall_Sahlins"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Middle_East"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Natufian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Netiv_Hagdud"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Northern_Israel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ohalo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Peas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pig"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pre-Pottery_Neolithic_A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pre-Pottery_Neolithic_B"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pre-Pottery_Neolithic_C"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sea_of_Galilee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Serbia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sheep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Southern_Germany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Syria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Talheim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Turkey"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Upper_Eupharates_River"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wadi_Mataha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Western_Europe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wheat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Younger_Dryas"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Artificial_Mound"/>
+        <Class IRI="#Tel"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Crescent_Shaped_Bladelet"/>
+        <Class IRI="#Lunate"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Grooved_Stone"/>
+        <Class IRI="#Shaft_Straightener"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LBK"/>
+        <Class IRI="#Linear_Band_Keramik"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Animal"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Archaeologist"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_theory"/>
+            <Class IRI="#Theory"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Architecture"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Art"/>
+        <Class IRI="#Remains"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Artifact"/>
+        <Class IRI="#Remains"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asian_Language"/>
+        <Class IRI="#Indo-European_Language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Baltic_or_Balkan_Language"/>
+        <Class IRI="#Indo-European_Language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bladelet"/>
+        <Class IRI="#Stone_Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bladelet"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#used_in"/>
+            <Class IRI="#Hunting_Tool"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bladelet"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#used_in"/>
+            <Class IRI="#Tools_With_Pieces"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bone"/>
+        <Class IRI="#Remains"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bowl"/>
+        <Class IRI="#Pottery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brittle_Rachis"/>
+        <Class IRI="#Rachis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brittle_Rachis"/>
+        <ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#suggests_domestication_of"/>
+                <Class IRI="#Plant"/>
+            </ObjectSomeValuesFrom>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brush_Hut"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
+        <Class IRI="#Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#made_of"/>
+            <Class IRI="#Material"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Built_Walls"/>
+        <Class IRI="#Walls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bull_Horns"/>
+        <Class IRI="#Remains"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Burial"/>
+        <Class IRI="#Remains"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Circular_Burial"/>
+        <Class IRI="#Burial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Circular_Burial"/>
+        <Class IRI="#Circular_Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Circular_Stone_Built_Structure"/>
+        <Class IRI="#Circular_Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Circular_Stone_Built_Structure"/>
+        <Class IRI="#Stone_Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Circular_Structure"/>
+        <Class IRI="#Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Climate"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Climatic_Stress"/>
+        <Class IRI="#Climate_Condition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communal_Structure"/>
+        <Class IRI="#Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Community"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Community"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#component_of"/>
+            <Class IRI="#Study_of_Agriculture"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crescent_Shaped_Bladelet"/>
+        <Class IRI="#Bladelet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decorated_Ground_Stone"/>
+        <Class IRI="#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dispersed_Language"/>
+        <Class IRI="#Indo-European_Language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dog_Skeleton"/>
+        <Class IRI="#Skeleton"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Domesticated_Plant"/>
+        <Class IRI="#Plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Domesticated_Plant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <Class IRI="#Tough_Rachis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Domestication"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Domestication"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#component_of"/>
+            <Class IRI="#Study_of_Agriculture"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dry_Summers"/>
+        <Class IRI="#Climate_Condition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Earliest_Pottery"/>
+        <Class IRI="#Pottery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Earliest_Stone_Building"/>
+        <Class IRI="#Stone_Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Early_Neolithic"/>
+        <Class IRI="#Site"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Early_Neolithic"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_remains"/>
+            <Class IRI="#Communal_Structure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Early_Neolithic"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_remains"/>
+            <Class IRI="#Plastered_Skull"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Early_Neolithic"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_remains"/>
+            <Class IRI="#Ritual_Object"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Europe_Location"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Europe_Location"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#located_in"/>
+            <NamedIndividual IRI="#Europe"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#European_Romance_Language"/>
+        <Class IRI="#Indo-European_Language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Excellent"/>
+        <Class IRI="#Preservation_Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Figurine"/>
+        <Class IRI="#Art"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Figurine"/>
+        <Class IRI="#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fresco"/>
+        <Class IRI="#Painting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Geometric_Kebaran_Site"/>
+        <Class IRI="#Site"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Geometric_Kebaran_Site"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#has_period"/>
+            <NamedIndividual IRI="#Kebaran_and_Geometric_Kebaran"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Germanic_Language"/>
+        <Class IRI="#Indo-European_Language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Goddess_Figurine"/>
+        <Class IRI="#Figurine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grooved_Stone"/>
+        <Class IRI="#Stone_Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Herd_Animal"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#House"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#House"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_walls"/>
+            <Class IRI="#Walls"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#House_with_Built_Walls"/>
+        <Class IRI="#House"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#House_with_Built_Walls"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_walls"/>
+            <Class IRI="#Built_Walls"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#House_with_Sunken_Walls"/>
+        <Class IRI="#House"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#House_with_Sunken_Walls"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_walls"/>
+            <Class IRI="#Sunken_Walls"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human_Skull"/>
+        <Class IRI="#Bone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hunting_Tool"/>
+        <Class IRI="#Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hunting_Tool"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#can_contain"/>
+            <Class IRI="#Bladelet"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hypothesis"/>
+        <Class IRI="#Theory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Indo-European_Language"/>
+        <Class IRI="#Language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jar"/>
+        <Class IRI="#Pottery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kebaran_Site"/>
+        <Class IRI="#Site"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kebaran_Site"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#has_period"/>
+            <NamedIndividual IRI="#Kebaran_and_Geometric_Kebaran"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LBK"/>
+        <Class IRI="#Farming_Communities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LBK"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#earliest_farmers_in"/>
+            <NamedIndividual IRI="#Central_Europe"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LBK"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#earliest_farmers_in"/>
+            <NamedIndividual IRI="#Western_Europe"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LBK_Site"/>
+        <Class IRI="#Site"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Large_Building"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Large_Building"/>
+        <Class IRI="#Large_Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Large_Communal_Structure"/>
+        <Class IRI="#Communal_Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Large_Structure"/>
+        <Class IRI="#Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Large_Village"/>
+        <Class IRI="#Village"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Late_Neolithic_Site"/>
+        <Class IRI="#Site"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linear_Band_Keramik"/>
+        <Class IRI="#Farming_Communities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Little_Ice_Age"/>
+        <Class IRI="#Climate_Condition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lunate"/>
+        <Class IRI="#Bladelet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lunate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#can_have"/>
+            <Class IRI="#Sickle_Polish"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Major"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mass_Grave"/>
+        <Class IRI="#Remains"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mediterranean_Climate"/>
+        <Class IRI="#Climate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mediterranean_Climate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <Class IRI="#Dry_Summers"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mediterranean_Climate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <Class IRI="#Winter_Rains"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mesolithic_Site"/>
+        <Class IRI="#Site"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Middle_East_Location"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Middle_East_Location"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#located_in"/>
+            <NamedIndividual IRI="#Middle_East"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Minor"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mortar"/>
+        <Class IRI="#Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mud_Brick"/>
+        <Class IRI="#Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mud_Brick_Building"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mud_Brick_Building"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#made_of"/>
+            <Class IRI="#Mud_Brick"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Natufian_Settlement"/>
+        <Class IRI="#Settlement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Natufian_Settlement"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#number_of_buildings"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:int"/>
+                <FacetRestriction facet="&xsd;maxInclusive">
+                    <Literal datatypeIRI="&xsd;integer">12</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Natufian_Site"/>
+        <Class IRI="#Site"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Natufian_Site"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_remains"/>
+            <Class IRI="#Circular_Burial"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Natufian_Site"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_remains"/>
+            <Class IRI="#Circular_Stone_Built_Structure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Natufian_Site"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_remains"/>
+            <Class IRI="#Grooved_Stone"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Natufian_Site"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_remains"/>
+            <Class IRI="#Mortar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Natufian_Site"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_remains"/>
+            <Class IRI="#Pestle"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Natufian_Site"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_remains"/>
+            <Class IRI="#Sea_Shell"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Natufian_Site"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_remains"/>
+            <Class IRI="#Shell_Bead"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ohalo_Organic_Remains"/>
+        <Class IRI="#Organic_Remains"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ohalo_Organic_Remains"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_preservation_quality"/>
+            <Class IRI="#Excellent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organic_Remains"/>
+        <Class IRI="#Remains"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oval_Stone_Building"/>
+        <Class IRI="#Stone_Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Painting"/>
+        <Class IRI="#Art"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Period"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#years_ago_ended"/>
+            <Datatype abbreviatedIRI="xsd:int"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Period"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#years_ago_started"/>
+            <Datatype abbreviatedIRI="xsd:int"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Personal_Ornament"/>
+        <Class IRI="#Art"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Personal_Ornament"/>
+        <Class IRI="#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pestle"/>
+        <Class IRI="#Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plant"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plant_Remains"/>
+        <Class IRI="#Organic_Remains"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plastered_Skull"/>
+        <Class IRI="#Ritual_Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Polish"/>
+        <Class IRI="#Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pot"/>
+        <Class IRI="#Pottery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pottery"/>
+        <Class IRI="#Remains"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pottery"/>
+        <Class IRI="#Technology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pre-Pottery_Neolithic_A_Site"/>
+        <Class IRI="#Early_Neolithic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pre-Pottery_Neolithic_A_Site"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#has_period"/>
+            <NamedIndividual IRI="#Early_Neolithic"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rachis"/>
+        <Class IRI="#Part_of_Plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rachis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#holds"/>
+            <Class IRI="#Seed"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rapid_Onset"/>
+        <Class IRI="#Onset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ritual_Object"/>
+        <Class IRI="#Art"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ritual_Object"/>
+        <Class IRI="#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sculpture"/>
+        <Class IRI="#Art"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sea_Shell"/>
+        <Class IRI="#Remains"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Seed"/>
+        <Class IRI="#Part_of_Plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Semi-subterranean_Structure"/>
+        <Class IRI="#Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shaft_Straightener"/>
+        <Class IRI="#Stone_Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shell_Bead"/>
+        <Class IRI="#Art"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shell_Bead"/>
+        <Class IRI="#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sickle_Polish"/>
+        <Class IRI="#Polish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Site"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_period"/>
+            <Class IRI="#Period"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Site"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_remains"/>
+            <Class IRI="#Remains"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Site"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#located_in"/>
+            <Class IRI="#Location"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skeleton"/>
+        <Class IRI="#Organic_Remains"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Slavic_Languages"/>
+        <Class IRI="#Indo-European_Language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stone"/>
+        <Class IRI="#Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stone_Building"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stone_Building"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#made_of"/>
+            <Class IRI="#Stone"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stone_Tool"/>
+        <Class IRI="#Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Structure"/>
+        <Class IRI="#Remains"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Study_of_Agriculture"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_component"/>
+            <Class IRI="#Community"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Study_of_Agriculture"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_component"/>
+            <Class IRI="#Domestication"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Study_of_Agriculture"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_component"/>
+            <Class IRI="#Technology"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sunken_Walls"/>
+        <Class IRI="#Walls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Technology"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#component_of"/>
+            <Class IRI="#Study_of_Agriculture"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tel"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tool"/>
+        <Class IRI="#Remains"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tool"/>
+        <Class IRI="#Technology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tools_With_Pieces"/>
+        <Class IRI="#Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tools_With_Pieces"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#can_contain"/>
+            <Class IRI="#Bladelet"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tough_Rachis"/>
+        <Class IRI="#Rachis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tough_Rachis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#suggests_domestication_of"/>
+            <Class IRI="#Plant"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tower"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Walls"/>
+        <Class IRI="#Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wild_Plant"/>
+        <Class IRI="#Plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wild_Plant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <Class IRI="#Brittle_Rachis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Winter_Rains"/>
+        <Class IRI="#Climate_Condition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#open-park_woodlands"/>
+        <Class IRI="#vegitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vegitation"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#woodlands"/>
+        <Class IRI="#vegitation"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Major"/>
+        <Class IRI="#Minor"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Late_Neolithic_Site"/>
+        <NamedIndividual IRI="#Abu_Hureyra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Natufian_Site"/>
+        <NamedIndividual IRI="#Abu_Hureyra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#domesticated"/>
+                <Class IRI="#Plant"/>
+            </ObjectSomeValuesFrom>
+        </ObjectComplementOf>
+        <NamedIndividual IRI="#Abu_Hureyra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_house"/>
+            <Class IRI="#Sunken_Walls"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Abu_Hureyra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_remains"/>
+            <Class IRI="#Plant_Remains"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Abu_Hureyra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#used_wide_range_of"/>
+            <Class IRI="#Plant"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Abu_Hureyra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Plant"/>
+        <NamedIndividual IRI="#Barely"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Animal"/>
+        <NamedIndividual IRI="#Bird"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Plant"/>
+        <NamedIndividual IRI="#Bitter_Vetch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Late_Neolithic_Site"/>
+        <NamedIndividual IRI="#Catalhoyuk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#decorated_with"/>
+            <Class IRI="#Bull_Horns"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Catalhoyuk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#decorated_with"/>
+            <Class IRI="#Fresco"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Catalhoyuk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_classification"/>
+            <Class IRI="#Major"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Catalhoyuk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Herd_Animal"/>
+        <NamedIndividual IRI="#Cattle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Europe_Location"/>
+        <NamedIndividual IRI="#Central_Europe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Middle_East_Location"/>
+        <NamedIndividual IRI="#Central_Turkey"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Plant"/>
+        <NamedIndividual IRI="#Chick_Peas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Middle_East_Location"/>
+        <NamedIndividual IRI="#Danube_River"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Animal"/>
+        <NamedIndividual IRI="#Dog"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Germanic_Language"/>
+        <NamedIndividual IRI="#Dutch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Period"/>
+        <NamedIndividual IRI="#Early_Neolithic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#domesticated"/>
+                <NamedIndividual IRI="#Barely"/>
+            </ObjectHasValue>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Early_Neolithic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#domesticated"/>
+                <NamedIndividual IRI="#Bitter_Vetch"/>
+            </ObjectHasValue>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Early_Neolithic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#domesticated"/>
+                <NamedIndividual IRI="#Chick_Peas"/>
+            </ObjectHasValue>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Early_Neolithic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#domesticated"/>
+                <NamedIndividual IRI="#Goat"/>
+            </ObjectHasValue>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Early_Neolithic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#domesticated"/>
+                <NamedIndividual IRI="#Lentils"/>
+            </ObjectHasValue>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Early_Neolithic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#domesticated"/>
+                <NamedIndividual IRI="#Peas"/>
+            </ObjectHasValue>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Early_Neolithic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#domesticated"/>
+                <NamedIndividual IRI="#Pig"/>
+            </ObjectHasValue>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Early_Neolithic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#domesticated"/>
+                <NamedIndividual IRI="#Sheep"/>
+            </ObjectHasValue>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Early_Neolithic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#domesticated"/>
+                <NamedIndividual IRI="#Wheat"/>
+            </ObjectHasValue>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Early_Neolithic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Germanic_Language"/>
+        <NamedIndividual IRI="#English"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Archaeologist"/>
+        <NamedIndividual IRI="#Ester_Bosrup"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Middle_East_Location"/>
+        <NamedIndividual IRI="#Euphrates_River"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Europe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Middle_East_Location"/>
+        <NamedIndividual IRI="#Fertile_Cresent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <Class IRI="#Dry_Summers"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Fertile_Cresent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <Class IRI="#Winter_Rains"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Fertile_Cresent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has_climate"/>
+                <Class IRI="#Mediterranean_Climate"/>
+            </ObjectSomeValuesFrom>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Fertile_Cresent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_vegitation_max"/>
+            <Class IRI="#open-park_woodlands"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Fertile_Cresent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_vegitation_min"/>
+            <Class IRI="#woodlands"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Fertile_Cresent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#located_across"/>
+            <NamedIndividual IRI="#Middle_East"/>
+        </ObjectHasValue>
+        <NamedIndividual IRI="#Fertile_Cresent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Herd_Animal"/>
+        <NamedIndividual IRI="#Gazelle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Germanic_Language"/>
+        <NamedIndividual IRI="#German"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Europe_Location"/>
+        <NamedIndividual IRI="#Germany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Herd_Animal"/>
+        <NamedIndividual IRI="#Goat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Archaeologist"/>
+        <NamedIndividual IRI="#Gordon_Childe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Middle_East_Location"/>
+        <NamedIndividual IRI="#Israel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pre-Pottery_Neolithic_A_Site"/>
+        <NamedIndividual IRI="#Jerf_el_Ahmar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_remains"/>
+            <Class IRI="#Communal_Structure"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Jerf_el_Ahmar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_remains"/>
+            <Class IRI="#Semi-subterranean_Structure"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Jerf_el_Ahmar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pre-Pottery_Neolithic_A_Site"/>
+        <NamedIndividual IRI="#Jericho"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Large_Communal_Structure"/>
+        <NamedIndividual IRI="#Jericho_Tower"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mud_Brick_Building"/>
+        <NamedIndividual IRI="#Jericho_Tower"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stone_Building"/>
+        <NamedIndividual IRI="#Jericho_Tower"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tower"/>
+        <NamedIndividual IRI="#Jericho_Tower"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#earliest_large_structure_in"/>
+            <NamedIndividual IRI="#Middle_East"/>
+        </ObjectHasValue>
+        <NamedIndividual IRI="#Jericho_Tower"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Middle_East_Location"/>
+        <NamedIndividual IRI="#Jordan_Valley"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Period"/>
+        <NamedIndividual IRI="#Kebaran_and_Geometric_Kebaran"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#characterized_by"/>
+                <Class IRI="#Agriculture"/>
+            </ObjectSomeValuesFrom>
+        </ObjectComplementOf>
+        <NamedIndividual IRI="#Kebaran_and_Geometric_Kebaran"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <Class IRI="#Hunter-Gatherers"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Kebaran_and_Geometric_Kebaran"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#subsisting_on"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#broad_range_of"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="#Animal"/>
+                        <Class IRI="#Plant"/>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectSomeValuesFrom>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Kebaran_and_Geometric_Kebaran"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Middle_East_Location"/>
+        <NamedIndividual IRI="#Konya_Plain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hypothesis"/>
+        <NamedIndividual IRI="#Language_Dispersal_Hypothesis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Period"/>
+        <NamedIndividual IRI="#Late_Neolithic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <Class IRI="#Earliest_Pottery"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Late_Neolithic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#developed"/>
+            <Class IRI="#Pottery"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Late_Neolithic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Plant"/>
+        <NamedIndividual IRI="#Lentils"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mesolithic_Site"/>
+        <NamedIndividual IRI="#Lepenski_Vir"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_remains"/>
+            <Class IRI="#Building"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Lepenski_Vir"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_remains"/>
+            <Class IRI="#Sculpture"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Lepenski_Vir"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Natufian_Site"/>
+        <NamedIndividual IRI="#Mallaha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_remains"/>
+            <Class IRI="#Dog_Skeleton"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Mallaha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_remains"/>
+            <Class IRI="#Large_Building"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Mallaha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_remains"/>
+            <Class IRI="#Oval_Stone_Building"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Mallaha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Archaeologist"/>
+        <NamedIndividual IRI="#Marshall_Sahlins"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Middle_East"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Period"/>
+        <NamedIndividual IRI="#Natufian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#characterized_by"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#domesticated"/>
+                    <Class IRI="#Herd_Animal"/>
+                </ObjectSomeValuesFrom>
+            </ObjectSomeValuesFrom>
+        </ObjectComplementOf>
+        <NamedIndividual IRI="#Natufian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#characterized_by"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#domesticated"/>
+                    <Class IRI="#Plant"/>
+                </ObjectSomeValuesFrom>
+            </ObjectSomeValuesFrom>
+        </ObjectComplementOf>
+        <NamedIndividual IRI="#Natufian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <Class IRI="#Lunate"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Natufian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#collected"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#broad_range_of"/>
+                    <Class IRI="#Plant"/>
+                </ObjectSomeValuesFrom>
+            </ObjectSomeValuesFrom>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Natufian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#constructed"/>
+                <Class IRI="#Earliest_Stone_Building"/>
+            </ObjectSomeValuesFrom>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Natufian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#created"/>
+                <Class IRI="#Personal_Ornament"/>
+            </ObjectSomeValuesFrom>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Natufian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has_house"/>
+                <Class IRI="#House_with_Built_Walls"/>
+            </ObjectSomeValuesFrom>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Natufian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pre-Pottery_Neolithic_A_Site"/>
+        <NamedIndividual IRI="#Netiv_Hagdud"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Middle_East_Location"/>
+        <NamedIndividual IRI="#Northern_Israel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kebaran_Site"/>
+        <NamedIndividual IRI="#Ohalo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_remains"/>
+            <Class IRI="#Brush_Hut"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Ohalo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_remains"/>
+            <Class IRI="#Ohalo_Organic_Remains"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Ohalo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Plant"/>
+        <NamedIndividual IRI="#Peas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Herd_Animal"/>
+        <NamedIndividual IRI="#Pig"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Period"/>
+        <NamedIndividual IRI="#Pre-Pottery_Neolithic_A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Period"/>
+        <NamedIndividual IRI="#Pre-Pottery_Neolithic_B"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#domesticated"/>
+                <Class IRI="#Plant"/>
+            </ObjectSomeValuesFrom>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Pre-Pottery_Neolithic_B"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#reduced_number"/>
+                <Class IRI="#Large_Village"/>
+            </ObjectSomeValuesFrom>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Pre-Pottery_Neolithic_B"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#domesticated"/>
+                <NamedIndividual IRI="#Barely"/>
+            </ObjectHasValue>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Pre-Pottery_Neolithic_B"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#domesticated"/>
+                <NamedIndividual IRI="#Bitter_Vetch"/>
+            </ObjectHasValue>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Pre-Pottery_Neolithic_B"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#domesticated"/>
+                <NamedIndividual IRI="#Chick_Peas"/>
+            </ObjectHasValue>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Pre-Pottery_Neolithic_B"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#domesticated"/>
+                <NamedIndividual IRI="#Lentils"/>
+            </ObjectHasValue>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Pre-Pottery_Neolithic_B"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#domesticated"/>
+                <NamedIndividual IRI="#Peas"/>
+            </ObjectHasValue>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Pre-Pottery_Neolithic_B"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#domesticated"/>
+                <NamedIndividual IRI="#Wheat"/>
+            </ObjectHasValue>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Pre-Pottery_Neolithic_B"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Period"/>
+        <NamedIndividual IRI="#Pre-Pottery_Neolithic_C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Middle_East_Location"/>
+        <NamedIndividual IRI="#Sea_of_Galilee"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Middle_East_Location"/>
+        <NamedIndividual IRI="#Serbia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Herd_Animal"/>
+        <NamedIndividual IRI="#Sheep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Europe_Location"/>
+        <NamedIndividual IRI="#Southern_Germany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Middle_East_Location"/>
+        <NamedIndividual IRI="#Syria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LBK_Site"/>
+        <NamedIndividual IRI="#Talheim"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_remains"/>
+            <Class IRI="#Mass_Grave"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Talheim"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Middle_East_Location"/>
+        <NamedIndividual IRI="#Turkey"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Middle_East_Location"/>
+        <NamedIndividual IRI="#Upper_Eupharates_River"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Geometric_Kebaran_Site"/>
+        <NamedIndividual IRI="#Wadi_Mataha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_remains"/>
+            <Class IRI="#Burial"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Wadi_Mataha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <DataHasValue>
+            <DataProperty IRI="#is_peaceful"/>
+            <Literal datatypeIRI="&xsd;boolean">false</Literal>
+        </DataHasValue>
+        <NamedIndividual IRI="#Wadi_Mataha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Europe_Location"/>
+        <NamedIndividual IRI="#Western_Europe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Plant"/>
+        <NamedIndividual IRI="#Wheat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Climatic_Stress"/>
+        <NamedIndividual IRI="#Younger_Dryas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Global_Event"/>
+        <NamedIndividual IRI="#Younger_Dryas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Period"/>
+        <NamedIndividual IRI="#Younger_Dryas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#characterized_by"/>
+            <Class IRI="#Little_Ice_Age"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Younger_Dryas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_onset"/>
+            <Class IRI="#Rapid_Onset"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Younger_Dryas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#reduced"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#number_of"/>
+                <Class IRI="#Natufian_Settlement"/>
+            </ObjectSomeValuesFrom>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Younger_Dryas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#reduced"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#size_of_buildings"/>
+                <Class IRI="#Natufian_Settlement"/>
+            </ObjectSomeValuesFrom>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Younger_Dryas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#has_effect_on"/>
+            <NamedIndividual IRI="#Natufian"/>
+        </ObjectHasValue>
+        <NamedIndividual IRI="#Younger_Dryas"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Europe"/>
+        <NamedIndividual IRI="#Middle_East"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Israel"/>
+        <NamedIndividual IRI="#Serbia"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Israel"/>
+        <NamedIndividual IRI="#Turkey"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in"/>
+        <NamedIndividual IRI="#Abu_Hureyra"/>
+        <NamedIndividual IRI="#Upper_Eupharates_River"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_period"/>
+        <NamedIndividual IRI="#Catalhoyuk"/>
+        <NamedIndividual IRI="#Late_Neolithic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in"/>
+        <NamedIndividual IRI="#Catalhoyuk"/>
+        <NamedIndividual IRI="#Konya_Plain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in"/>
+        <NamedIndividual IRI="#Central_Turkey"/>
+        <NamedIndividual IRI="#Turkey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in"/>
+        <NamedIndividual IRI="#Danube_River"/>
+        <NamedIndividual IRI="#Serbia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#divided_into"/>
+        <NamedIndividual IRI="#Early_Neolithic"/>
+        <NamedIndividual IRI="#Pre-Pottery_Neolithic_B"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#divided_into"/>
+        <NamedIndividual IRI="#Early_Neolithic"/>
+        <NamedIndividual IRI="#Pre-Pottery_Neolithic_A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in"/>
+        <NamedIndividual IRI="#Euphrates_River"/>
+        <NamedIndividual IRI="#Syria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in"/>
+        <NamedIndividual IRI="#Israel"/>
+        <NamedIndividual IRI="#Middle_East"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in"/>
+        <NamedIndividual IRI="#Jerf_el_Ahmar"/>
+        <NamedIndividual IRI="#Upper_Eupharates_River"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_remains"/>
+        <NamedIndividual IRI="#Jericho"/>
+        <NamedIndividual IRI="#Jericho_Tower"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_period"/>
+        <NamedIndividual IRI="#Jericho_Tower"/>
+        <NamedIndividual IRI="#Pre-Pottery_Neolithic_A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in"/>
+        <NamedIndividual IRI="#Konya_Plain"/>
+        <NamedIndividual IRI="#Central_Turkey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in"/>
+        <NamedIndividual IRI="#Lepenski_Vir"/>
+        <NamedIndividual IRI="#Danube_River"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in"/>
+        <NamedIndividual IRI="#Mallaha"/>
+        <NamedIndividual IRI="#Northern_Israel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in"/>
+        <NamedIndividual IRI="#Netiv_Hagdud"/>
+        <NamedIndividual IRI="#Jordan_Valley"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in"/>
+        <NamedIndividual IRI="#Northern_Israel"/>
+        <NamedIndividual IRI="#Israel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in"/>
+        <NamedIndividual IRI="#Ohalo"/>
+        <NamedIndividual IRI="#Sea_of_Galilee"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_period"/>
+        <NamedIndividual IRI="#Pre-Pottery_Neolithic_A"/>
+        <NamedIndividual IRI="#Early_Neolithic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_period"/>
+        <NamedIndividual IRI="#Pre-Pottery_Neolithic_B"/>
+        <NamedIndividual IRI="#Early_Neolithic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in"/>
+        <NamedIndividual IRI="#Sea_of_Galilee"/>
+        <NamedIndividual IRI="#Northern_Israel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in"/>
+        <NamedIndividual IRI="#Serbia"/>
+        <NamedIndividual IRI="#Middle_East"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in"/>
+        <NamedIndividual IRI="#Southern_Germany"/>
+        <NamedIndividual IRI="#Germany"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in"/>
+        <NamedIndividual IRI="#Syria"/>
+        <NamedIndividual IRI="#Middle_East"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in"/>
+        <NamedIndividual IRI="#Talheim"/>
+        <NamedIndividual IRI="#Southern_Germany"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in"/>
+        <NamedIndividual IRI="#Upper_Eupharates_River"/>
+        <NamedIndividual IRI="#Euphrates_River"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#years_ago_ended"/>
+        <NamedIndividual IRI="#Early_Neolithic"/>
+        <Literal datatypeIRI="&xsd;int">8500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#years_ago_started"/>
+        <NamedIndividual IRI="#Early_Neolithic"/>
+        <Literal datatypeIRI="&xsd;int">12000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#height_in_meters"/>
+        <NamedIndividual IRI="#Jericho_Tower"/>
+        <Literal datatypeIRI="&xsd;int">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#years_ago_ended"/>
+        <NamedIndividual IRI="#Kebaran_and_Geometric_Kebaran"/>
+        <Literal datatypeIRI="&xsd;int">15000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#years_ago_started"/>
+        <NamedIndividual IRI="#Kebaran_and_Geometric_Kebaran"/>
+        <Literal datatypeIRI="&xsd;int">25000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#years_ago_ended"/>
+        <NamedIndividual IRI="#Late_Neolithic"/>
+        <Literal datatypeIRI="&xsd;int">7000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#years_ago_started"/>
+        <NamedIndividual IRI="#Late_Neolithic"/>
+        <Literal datatypeIRI="&xsd;int">8500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#years_ago_ended"/>
+        <NamedIndividual IRI="#Natufian"/>
+        <Literal datatypeIRI="&xsd;int">12000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#years_ago_started"/>
+        <NamedIndividual IRI="#Natufian"/>
+        <Literal datatypeIRI="&xsd;int">15000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#number_of_buildings"/>
+        <NamedIndividual IRI="#Netiv_Hagdud"/>
+        <Literal datatypeIRI="&xsd;int">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#years_ago_ended"/>
+        <NamedIndividual IRI="#Pre-Pottery_Neolithic_A"/>
+        <Literal datatypeIRI="&xsd;int">10800</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#years_ago_started"/>
+        <NamedIndividual IRI="#Pre-Pottery_Neolithic_A"/>
+        <Literal datatypeIRI="&xsd;int">12000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#years_ago_ended"/>
+        <NamedIndividual IRI="#Pre-Pottery_Neolithic_B"/>
+        <Literal datatypeIRI="&xsd;int">8500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#years_ago_started"/>
+        <NamedIndividual IRI="#Pre-Pottery_Neolithic_B"/>
+        <Literal datatypeIRI="&xsd;int">10800</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#can_contain"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#caused"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#caused_by"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#found"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_classification"/>
+        <ObjectProperty IRI="#smaller"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_concept"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_house"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_vegitation_max"/>
+        <ObjectProperty IRI="#has_vegitation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_vegitation_min"/>
+        <ObjectProperty IRI="#has_vegitation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_walls"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hunted_mostly"/>
+        <ObjectProperty IRI="#hunted"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#used_in"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#used_wide_range_of"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#caused_by"/>
+        <ObjectProperty IRI="#caused"/>
+    </InverseObjectProperties>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#has_period"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#located_in"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#occurred_during"/>
+    </TransitiveObjectProperty>
+    <DataPropertyRange>
+        <DataProperty IRI="#number_of_buildings"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#years_ago_ended"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#years_ago_started"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

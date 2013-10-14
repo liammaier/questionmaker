@@ -1,0 +1,687 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2013/8/untitled-ontology-5"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/ontologies/2013/8/untitled-ontology-5">
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#African_Elephant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#African_Elephant_Ears"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asian_Elephant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crops"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ears"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Elephant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Elephant_Handler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fields"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Food"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Forest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Forest_of_India"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Forest_of_Southeast_Asia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ground"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heavy_Log"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heavy_Work"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hind_Legs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hook_Trunk_Around_Elephant_Tail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hunter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#India"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Large_Ears"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Leaf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Log"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Other_Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Part_Of_Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Preserves"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Small_Branch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snorkle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SouthEast_Asia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stand_On_Hind_Legs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trees"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trick"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trunk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Very_Long_Trunk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Water"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wild"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wild_Elephant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Work"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#become_friends"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#become_good_friends"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#can_clear"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#can_drink_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#can_fill_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#can_greet_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#can_learn_trick"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#can_reach"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#can_smell_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#can_tow"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#favorite_food"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#flap"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#flapped_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#found_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#from"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_characteristic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_caught_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_trained_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_trained_for"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#keep_cool"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#largest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#live_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#protected_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#protected_from"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#protects"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#scare_off"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#showers_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#smartest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#used_as"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#used_for"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#used_to_find"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#uses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#would_like_to_see"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isTrained"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#African_Elephant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#can_drink_with"/>
+            <Class IRI="#Very_Long_Trunk"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#African_Elephant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#can_greet_with"/>
+            <Class IRI="#Very_Long_Trunk"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#African_Elephant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#can_smell_with"/>
+            <Class IRI="#Very_Long_Trunk"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#African_Elephant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#African_Elephant_Ears"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#African_Elephant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#live_in"/>
+            <Class IRI="#Preserves"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#African_Elephant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#protected_by"/>
+            <Class IRI="#Preserves"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#African_Elephant_Ears"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#flapped_by"/>
+            <Class IRI="#African_Elephant"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#African_Elephant_Ears"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#keep_cool"/>
+            <Class IRI="#African_Elephant"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#African_Elephant_Ears"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#scare_off"/>
+            <Class IRI="#African_Elephant"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Asian_Elephant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#become_good_friends"/>
+            <Class IRI="#Elephant_Handler"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Asian_Elephant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#can_clear"/>
+            <Class IRI="#Forest"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Asian_Elephant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_caught_by"/>
+            <Class IRI="#Person"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Asian_Elephant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_trained_by"/>
+            <Class IRI="#Person"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Asian_Elephant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_trained_for"/>
+            <Class IRI="#Heavy_Work"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Asian_Elephant"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#found_in"/>
+            <ObjectUnionOf>
+                <Class IRI="#Forest_of_India"/>
+                <Class IRI="#Forest_of_Southeast_Asia"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Crops"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#protected_by"/>
+            <Class IRI="#Preserves"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Crops"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#protected_from"/>
+            <Class IRI="#African_Elephant"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Elephant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#can_learn_trick"/>
+            <Class IRI="#Hook_Trunk_Around_Elephant_Tail"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Elephant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#can_learn_trick"/>
+            <Class IRI="#Stand_On_Hind_Legs"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Elephant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#favorite_food"/>
+            <Class IRI="#Leaf"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Elephant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#favorite_food"/>
+            <Class IRI="#Small_Branch"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Elephant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#favorite_food"/>
+            <Class IRI="#Trees"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Elephant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Tail"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Elephant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Very_Long_Trunk"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Elephant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#largest"/>
+            <Class IRI="#Animal"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Elephant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#showers_with"/>
+            <Class IRI="#Very_Long_Trunk"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Elephant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#smartest"/>
+            <Class IRI="#Animal"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Elephant_Handler"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#become_good_friends"/>
+            <Class IRI="#Asian_Elephant"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Fields"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#protected_by"/>
+            <Class IRI="#Preserves"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Fields"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#protected_from"/>
+            <Class IRI="#African_Elephant"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Hook_Trunk_Around_Elephant_Tail"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#Tail"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Hook_Trunk_Around_Elephant_Tail"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#Trunk"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Leaf"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#from"/>
+            <Class IRI="#Trees"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Person"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#would_like_to_see"/>
+            <Class IRI="#Wild_Elephant"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Preserves"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#protected_from"/>
+            <Class IRI="#African_Elephant"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Preserves"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#protected_from"/>
+            <Class IRI="#Hunter"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Preserves"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#protects"/>
+            <Class IRI="#African_Elephant"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Preserves"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#protects"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#Crops"/>
+                <Class IRI="#Fields"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Small_Branch"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#from"/>
+            <Class IRI="#Trees"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Trees"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#from"/>
+            <Class IRI="#Trees"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Very_Long_Trunk"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#can_fill_with"/>
+            <Class IRI="#Water"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Very_Long_Trunk"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#can_reach"/>
+            <Class IRI="#Ground"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Very_Long_Trunk"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#can_reach"/>
+            <Class IRI="#Tree"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Very_Long_Trunk"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#used_as"/>
+            <Class IRI="#Snorkle"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Very_Long_Trunk"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#used_to_find"/>
+            <Class IRI="#Food"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Wild_Elephant"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Elephant"/>
+            <Class IRI="#Wild"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#African_Elephant"/>
+        <Class IRI="#Elephant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#African_Elephant_Ears"/>
+        <Class IRI="#Large_Ears"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asian_Elephant"/>
+        <Class IRI="#Elephant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ears"/>
+        <Class IRI="#Part_Of_Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Elephant"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Elephant_Handler"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Forest_of_India"/>
+        <Class IRI="#India"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Forest_of_Southeast_Asia"/>
+        <Class IRI="#SouthEast_Asia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heavy_Log"/>
+        <Class IRI="#Log"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heavy_Work"/>
+        <Class IRI="#Work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hind_Legs"/>
+        <Class IRI="#Part_Of_Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hook_Trunk_Around_Elephant_Tail"/>
+        <Class IRI="#Trick"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Large_Ears"/>
+        <Class IRI="#Ears"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Leaf"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Other_Animal"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Small_Branch"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stand_On_Hind_Legs"/>
+        <Class IRI="#Trick"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tail"/>
+        <Class IRI="#Part_Of_Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trees"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Very_Long_Trunk"/>
+        <Class IRI="#Trunk"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wild_Elephant"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#African_Elephant"/>
+        <Class IRI="#Other_Animal"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#become_good_friends"/>
+        <ObjectProperty IRI="#become_friends"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_trained_for"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#become_good_friends"/>
+    </SymmetricObjectProperty>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

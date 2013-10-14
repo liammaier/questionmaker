@@ -1,0 +1,4369 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2011/7/chapter10.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/ontologies/2011/7/chapter10.owl">
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Archaeological_Site"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Archaeologist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Artifacts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Burial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Characteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Great_House"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Leaders"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location_Characteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Material_Characteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Monument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Objects"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Peoples"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Power_Source"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Purpose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Road"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shape_Characteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Significance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Site_Characteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Soft_Power"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure_Characteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Theory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Time_Period"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trade_Network"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weather"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Answers_Question"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Burried_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Center_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Close_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Constructed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Ended_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Found_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Leaders_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Lived_in_Location"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Opposes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Road_from"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Road_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Supported_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Traded_on"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Variously_Attributed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#built_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Archaeologist"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Characteristic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_End_Occupation_Date"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Implication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Location_Characteristic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Material_Characteristic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Occupier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Purpose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Question"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Question_Topic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Remains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Shape_Characteristic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Significance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Stage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Structure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Structure_Characteristic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Theory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Time_Period"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#have_Power_Source"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_located_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#removed_Structure"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Construction_Ended"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Construction_Started"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Occupation_Ended"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Population"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Refuted_by"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Significance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Supported_by"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Theory_says"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_Depth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_Description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_Diameter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_Height"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_Length"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_Rooms"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_Size"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_Width"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_Year_Period"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#3_pairs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5000_Years_Ago"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ability_to_organize_a_large_group"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ability_to_organize_large_feasting_events"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Agricultural_Surplus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Agriculturally_productive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#American_Bottom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Amesbury_Archer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arrowheads"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aubrey_holes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Avon_River"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Beads"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bluestones"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bufffered_risk_in_uncertian_environment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cahokia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cahokia_chiefdom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cahokia_elite_power_source?"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cahokia_elites"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cahokia_on_verge_of_State"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Capped_by_lintels"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Center_area_of_Stonehenge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Center_of_ritural_and_religious_life"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ceramics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ceremonial_Center"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chaco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chaco_Canyon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chiefdom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chocoan_Network"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Circle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Circle_or_semicircle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Clay_and_gravel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Colin_Renfrew"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Competition_between_chiefs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Competitive_cycle_led_to_decimation_of_resources"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Contains_animal_bones"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cursus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Danes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dhaka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Drought"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Druids"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Durrington_Walls"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Early_Bronze_Age"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Earthen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Earthwork_Circle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Easter_Island"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Easter_Island_Leaders"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Eastern_North_America"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Elite_Residence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Elite_Residence_and_Ceremonial_Center"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Enclosures"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#England"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Evidence_of_a_Chiefdom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Evidence_of_elites"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Evidence_of_social_inequality"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Feast"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Food"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Force"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Four_Corners_region"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Glacial_Theory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Grand_Plaza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Granite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Great_Enclosure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Great_Zimbabwe_Elite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Great_Zimbabwe_region"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Great_houses"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Greeks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Guide_people_to_Stonehenge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Harsh_environment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hill_Complex"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Horseshoe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Human_sacrifice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hut"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Inherited_position"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Inside_Sarsen_Circle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kivas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Large"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Large_Settlement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Large_Undertaking"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Largest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Late_Neolithic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Low_rainfall"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lynne_Sebastian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Macaws"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mapungubwe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mapungubwe_Leaders"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Marvel_of_engineering"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Massive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mississippian_Period"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Moai"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Monks_Mound"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mound_51"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mound_72"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mounds"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Multistoried"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#New_Mexico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#No_domestic_remains"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Northeastern_South_Africa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Other_decorations"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Palace_of_the_Queen_of_Sheba"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phase_1:_Earthwork_Circle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phase_2:_Burials_and_a_Timber_Structure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phase_3:_Stone_Monument"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phase_3a:_Bluestones"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phase_3b:_Sarsen_Circle_and_Trilithons"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phase_3c-f:_Rearranging_Bluestones_and_Digging_Holes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Political_Leadership"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pottery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pueblo_Bonito_Elite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Redistrubution_of_surplus_goods"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Religious"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Religious_importance_of_birds"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Religous_position"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rich_in_mineral_resources"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ring"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ritural_Function"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Romans"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_33"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room_38"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Round_ditch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Salisbury_Plain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Salisbury_Plain_Area"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#San_Juan_Basin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sarsen_Circle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sarsen_Stone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Semicircle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Series_of_houses"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Settlement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Settlement_near_Stonehenge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Southeast_Africa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Southern_England"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Standing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#State"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#State_bureaucracy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stonehenge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stonehenge_Chiefdom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stonehenge_Leaders"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Subterranean"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#System_of_roads"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Taxes_backed_by_threat_of_force"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Avenue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Timber"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Timber_Pots"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Timber_Structure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#To_predict_celestial_events"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tower"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trade_Routes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Traded_over_long_distances"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Transported_by_humans"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trilithons"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Turquoise"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Upright"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Walls"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#What_is_its_function?"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Why_bluestones_have_valuse_to_justify_effort"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wooden_posts_in_holes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zimbabwe"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Great_House"/>
+        <ObjectIntersectionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#has_Structure_Characteristic"/>
+                <NamedIndividual IRI="#Large"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#has_Structure_Characteristic"/>
+                <NamedIndividual IRI="#Multistoried"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#is_located_in"/>
+                <NamedIndividual IRI="#Chaco_Canyon"/>
+            </ObjectHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#has_Year_Period"/>
+                <Literal datatypeIRI="&rdf;PlainLiteral">800 AD</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Archaeological_Site"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Archaeological_Site"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_Structure"/>
+            <Class IRI="#Structure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Archaeological_Site"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_located_in"/>
+            <Class IRI="#Location"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Archaeologist"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Archaeologist"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_Theory"/>
+            <Class IRI="#Theory"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Artifacts"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Burial"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Characteristic"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Great_House"/>
+        <Class IRI="#Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Leaders"/>
+        <Class IRI="#Peoples"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location_Characteristic"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Material"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Material_Characteristic"/>
+        <Class IRI="#Structure_Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monument"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mound"/>
+        <Class IRI="#Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Objects"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Peoples"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Power_Source"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Purpose"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Road"/>
+        <Class IRI="#Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shape_Characteristic"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Significance"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Site_Characteristic"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Soft_Power"/>
+        <Class IRI="#Power_Source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Structure"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Structure_Characteristic"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Theory"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Theory"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_Theory_Topic"/>
+            <Class abbreviatedIRI=":Thing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Theory"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="#has_Archaeologist"/>
+            <Class IRI="#Archaeologist"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Time_Period"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trade_Network"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weather"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Location_Characteristic"/>
+        <Class IRI="#Site_Characteristic"/>
+        <Class IRI="#Structure_Characteristic"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Time_Period"/>
+        <NamedIndividual IRI="#5000_Years_Ago"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Theory"/>
+        <NamedIndividual IRI="#Ability_to_organize_large_feasting_events"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Theory"/>
+        <NamedIndividual IRI="#Agricultural_Surplus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Archaeological_Site"/>
+        <NamedIndividual IRI="#Amesbury_Archer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Burial"/>
+        <NamedIndividual IRI="#Amesbury_Archer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Leaders"/>
+        <NamedIndividual IRI="#Amesbury_Archer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Objects"/>
+        <NamedIndividual IRI="#Arrowheads"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Avon_River"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Theory"/>
+        <NamedIndividual IRI="#Bufffered_risk_in_uncertian_environment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Archaeological_Site"/>
+        <NamedIndividual IRI="#Cahokia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Theory"/>
+        <NamedIndividual IRI="#Cahokia_chiefdom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Leaders"/>
+        <NamedIndividual IRI="#Cahokia_elites"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Theory"/>
+        <NamedIndividual IRI="#Cahokia_on_verge_of_State"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Theory"/>
+        <NamedIndividual IRI="#Center_of_ritural_and_religious_life"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Artifacts"/>
+        <NamedIndividual IRI="#Ceramics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Theory"/>
+        <NamedIndividual IRI="#Ceremonial_Center"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Peoples"/>
+        <NamedIndividual IRI="#Chaco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Chaco_Canyon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Leaders"/>
+        <NamedIndividual IRI="#Chiefdom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Theory"/>
+        <NamedIndividual IRI="#Chocoan_Network"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Trade_Network"/>
+        <NamedIndividual IRI="#Chocoan_Network"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Archaeologist"/>
+        <NamedIndividual IRI="#Colin_Renfrew"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Theory"/>
+        <NamedIndividual IRI="#Competition_between_chiefs"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Theory"/>
+        <NamedIndividual IRI="#Competitive_cycle_led_to_decimation_of_resources"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monument"/>
+        <NamedIndividual IRI="#Cursus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Peoples"/>
+        <NamedIndividual IRI="#Danes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Weather"/>
+        <NamedIndividual IRI="#Drought"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Peoples"/>
+        <NamedIndividual IRI="#Druids"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Archaeological_Site"/>
+        <NamedIndividual IRI="#Durrington_Walls"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Structure"/>
+        <NamedIndividual IRI="#Durrington_Walls"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Structure"/>
+        <NamedIndividual IRI="#Earthwork_Circle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Archaeological_Site"/>
+        <NamedIndividual IRI="#Easter_Island"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Easter_Island"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Leaders"/>
+        <NamedIndividual IRI="#Easter_Island_Leaders"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Theory"/>
+        <NamedIndividual IRI="#Elite_Residence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Theory"/>
+        <NamedIndividual IRI="#Elite_Residence_and_Ceremonial_Center"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#England"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Purpose"/>
+        <NamedIndividual IRI="#Feast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Objects"/>
+        <NamedIndividual IRI="#Food"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Power_Source"/>
+        <NamedIndividual IRI="#Force"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Theory"/>
+        <NamedIndividual IRI="#Glacial_Theory"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Material"/>
+        <NamedIndividual IRI="#Gold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Objects"/>
+        <NamedIndividual IRI="#Gold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Grand_Plaza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Structure"/>
+        <NamedIndividual IRI="#Grand_Plaza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Archaeological_Site"/>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Structure"/>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Leaders"/>
+        <NamedIndividual IRI="#Great_Zimbabwe_Elite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Great_House"/>
+        <NamedIndividual IRI="#Great_houses"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Peoples"/>
+        <NamedIndividual IRI="#Greeks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Soft_Power"/>
+        <NamedIndividual IRI="#Inherited_position"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Objects"/>
+        <NamedIndividual IRI="#Jet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Thing"/>
+        <NamedIndividual IRI="#Jet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Structure_Characteristic"/>
+        <NamedIndividual IRI="#Large"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Theory"/>
+        <NamedIndividual IRI="#Large_Settlement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Time_Period"/>
+        <NamedIndividual IRI="#Late_Neolithic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Weather"/>
+        <NamedIndividual IRI="#Low_rainfall"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Archaeologist"/>
+        <NamedIndividual IRI="#Lynne_Sebastian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Objects"/>
+        <NamedIndividual IRI="#Macaws"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Thing"/>
+        <NamedIndividual IRI="#Macaws"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Archaeological_Site"/>
+        <NamedIndividual IRI="#Mapungubwe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Leaders"/>
+        <NamedIndividual IRI="#Mapungubwe_Leaders"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monument"/>
+        <NamedIndividual IRI="#Moai"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mound"/>
+        <NamedIndividual IRI="#Monks_Mound"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mound"/>
+        <NamedIndividual IRI="#Mound_51"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Burial"/>
+        <NamedIndividual IRI="#Mound_72"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mound"/>
+        <NamedIndividual IRI="#Mound_72"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mound"/>
+        <NamedIndividual IRI="#Mounds"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Structure_Characteristic"/>
+        <NamedIndividual IRI="#Multistoried"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Objects"/>
+        <NamedIndividual IRI="#Other_decorations"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Theory"/>
+        <NamedIndividual IRI="#Palace_of_the_Queen_of_Sheba"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Archaeological_Site"/>
+        <NamedIndividual IRI="#Phase_1:_Earthwork_Circle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Theory"/>
+        <NamedIndividual IRI="#Political_Leadership"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Objects"/>
+        <NamedIndividual IRI="#Pottery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Archaeological_Site"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <Class IRI="#Great_House"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Structure"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Leaders"/>
+        <NamedIndividual IRI="#Pueblo_Bonito_Elite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Soft_Power"/>
+        <NamedIndividual IRI="#Redistrubution_of_surplus_goods"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Theory"/>
+        <NamedIndividual IRI="#Religious_importance_of_birds"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Soft_Power"/>
+        <NamedIndividual IRI="#Religous_position"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Purpose"/>
+        <NamedIndividual IRI="#Ritural_Function"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Peoples"/>
+        <NamedIndividual IRI="#Romans"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Burial"/>
+        <NamedIndividual IRI="#Room_33"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Burial"/>
+        <NamedIndividual IRI="#Room_38"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Salisbury_Plain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Archaeological_Site"/>
+        <NamedIndividual IRI="#Salisbury_Plain_Area"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Structure"/>
+        <NamedIndividual IRI="#Sarsen_Circle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Southern_England"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Power_Source"/>
+        <NamedIndividual IRI="#State_bureaucracy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monument"/>
+        <NamedIndividual IRI="#Stonehenge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Structure"/>
+        <NamedIndividual IRI="#Stonehenge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Theory"/>
+        <NamedIndividual IRI="#Stonehenge_Chiefdom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Leaders"/>
+        <NamedIndividual IRI="#Stonehenge_Leaders"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Archaeological_Site"/>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Road"/>
+        <NamedIndividual IRI="#System_of_roads"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Theory"/>
+        <NamedIndividual IRI="#Taxes_backed_by_threat_of_force"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monument"/>
+        <NamedIndividual IRI="#The_Avenue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Road"/>
+        <NamedIndividual IRI="#The_Avenue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Purpose"/>
+        <NamedIndividual IRI="#To_predict_celestial_events"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Theory"/>
+        <NamedIndividual IRI="#Transported_by_humans"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Objects"/>
+        <NamedIndividual IRI="#Turquoise"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="#Circle"/>
+        <NamedIndividual IRI="#Ring"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Evidence_of_elites"/>
+        <NamedIndividual IRI="#Evidence_of_social_inequality"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Large_Undertaking"/>
+        <NamedIndividual IRI="#Marvel_of_engineering"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Standing"/>
+        <NamedIndividual IRI="#Upright"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#State"/>
+        <NamedIndividual IRI="#State_bureaucracy"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Stonehenge"/>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Timber"/>
+        <NamedIndividual IRI="#Wood"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Timber_Pots"/>
+        <NamedIndividual IRI="#Timber_Structure"/>
+    </SameIndividual>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Answers_Question"/>
+        <NamedIndividual IRI="#Ability_to_organize_large_feasting_events"/>
+        <NamedIndividual IRI="#Cahokia_elite_power_source?"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Opposes"/>
+        <NamedIndividual IRI="#Ability_to_organize_large_feasting_events"/>
+        <NamedIndividual IRI="#Cahokia_on_verge_of_State"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Ability_to_organize_large_feasting_events"/>
+        <NamedIndividual IRI="#Cahokia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Ability_to_organize_large_feasting_events"/>
+        <NamedIndividual IRI="#Feast"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Ability_to_organize_large_feasting_events"/>
+        <NamedIndividual IRI="#Cahokia_elites"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Ability_to_organize_large_feasting_events"/>
+        <NamedIndividual IRI="#Grand_Plaza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Opposes"/>
+        <NamedIndividual IRI="#Agricultural_Surplus"/>
+        <NamedIndividual IRI="#Bufffered_risk_in_uncertian_environment"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Supported_by"/>
+        <NamedIndividual IRI="#Agricultural_Surplus"/>
+        <NamedIndividual IRI="#Jet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Supported_by"/>
+        <NamedIndividual IRI="#Agricultural_Surplus"/>
+        <NamedIndividual IRI="#Turquoise"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Archaeologist"/>
+        <NamedIndividual IRI="#Agricultural_Surplus"/>
+        <NamedIndividual IRI="#Lynne_Sebastian"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Agricultural_Surplus"/>
+        <NamedIndividual IRI="#Chaco_Canyon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Agricultural_Surplus"/>
+        <NamedIndividual IRI="#Great_houses"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Agricultural_Surplus"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Agricultural_Surplus"/>
+        <NamedIndividual IRI="#Chocoan_Network"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_located_in"/>
+        <NamedIndividual IRI="#American_Bottom"/>
+        <NamedIndividual IRI="#Eastern_North_America"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Burried_with"/>
+        <NamedIndividual IRI="#Amesbury_Archer"/>
+        <NamedIndividual IRI="#Other_decorations"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Burried_with"/>
+        <NamedIndividual IRI="#Amesbury_Archer"/>
+        <NamedIndividual IRI="#Arrowheads"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Burried_with"/>
+        <NamedIndividual IRI="#Amesbury_Archer"/>
+        <NamedIndividual IRI="#Gold"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Burried_with"/>
+        <NamedIndividual IRI="#Amesbury_Archer"/>
+        <NamedIndividual IRI="#Pottery"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Close_to"/>
+        <NamedIndividual IRI="#Amesbury_Archer"/>
+        <NamedIndividual IRI="#Stonehenge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Significance"/>
+        <NamedIndividual IRI="#Amesbury_Archer"/>
+        <NamedIndividual IRI="#Evidence_of_elites"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Significance"/>
+        <NamedIndividual IRI="#Amesbury_Archer"/>
+        <NamedIndividual IRI="#Evidence_of_a_Chiefdom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Time_Period"/>
+        <NamedIndividual IRI="#Amesbury_Archer"/>
+        <NamedIndividual IRI="#Early_Bronze_Age"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_located_in"/>
+        <NamedIndividual IRI="#Amesbury_Archer"/>
+        <NamedIndividual IRI="#Salisbury_Plain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Shape_Characteristic"/>
+        <NamedIndividual IRI="#Aubrey_holes"/>
+        <NamedIndividual IRI="#Ring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 Development of Stonehenge - Phase 1</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Structure_Characteristic"/>
+        <NamedIndividual IRI="#Aubrey_holes"/>
+        <NamedIndividual IRI="#Wooden_posts_in_holes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Characteristic"/>
+        <NamedIndividual IRI="#Bluestones"/>
+        <NamedIndividual IRI="#Center_area_of_Stonehenge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Development of Stonehenge - Phase 3a</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Material_Characteristic"/>
+        <NamedIndividual IRI="#Bluestones"/>
+        <NamedIndividual IRI="#Stone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Development of Stonehenge - Phase 3a</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Question"/>
+        <NamedIndividual IRI="#Bluestones"/>
+        <NamedIndividual IRI="#Why_bluestones_have_valuse_to_justify_effort"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Development of Stonehenge - Phase 3a</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Shape_Characteristic"/>
+        <NamedIndividual IRI="#Bluestones"/>
+        <NamedIndividual IRI="#Circle_or_semicircle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Development of Stonehenge - Phase 3a</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Theory"/>
+        <NamedIndividual IRI="#Bluestones"/>
+        <NamedIndividual IRI="#Transported_by_humans"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Bufffered_risk_in_uncertian_environment"/>
+        <NamedIndividual IRI="#Great_houses"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Bufffered_risk_in_uncertian_environment"/>
+        <NamedIndividual IRI="#Chocoan_Network"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Contains"/>
+        <NamedIndividual IRI="#Cahokia"/>
+        <NamedIndividual IRI="#Mound_72"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Contains"/>
+        <NamedIndividual IRI="#Cahokia"/>
+        <NamedIndividual IRI="#Mound_51"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Contains"/>
+        <NamedIndividual IRI="#Cahokia"/>
+        <NamedIndividual IRI="#Mounds"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Characteristic"/>
+        <NamedIndividual IRI="#Cahokia"/>
+        <NamedIndividual IRI="#Settlement"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Structure"/>
+        <NamedIndividual IRI="#Cahokia"/>
+        <NamedIndividual IRI="#Monks_Mound"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Structure"/>
+        <NamedIndividual IRI="#Cahokia"/>
+        <NamedIndividual IRI="#Grand_Plaza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Time_Period"/>
+        <NamedIndividual IRI="#Cahokia"/>
+        <NamedIndividual IRI="#Mississippian_Period"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_located_in"/>
+        <NamedIndividual IRI="#Cahokia"/>
+        <NamedIndividual IRI="#American_Bottom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Answers_Question"/>
+        <NamedIndividual IRI="#Cahokia_chiefdom"/>
+        <NamedIndividual IRI="#Cahokia_elite_power_source?"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Cahokia_chiefdom"/>
+        <NamedIndividual IRI="#Cahokia_elites"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Cahokia_chiefdom"/>
+        <NamedIndividual IRI="#Cahokia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Cahokia_chiefdom"/>
+        <NamedIndividual IRI="#Chiefdom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#have_Power_Source"/>
+        <NamedIndividual IRI="#Cahokia_chiefdom"/>
+        <NamedIndividual IRI="#Chiefdom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Question_Topic"/>
+        <NamedIndividual IRI="#Cahokia_elite_power_source?"/>
+        <NamedIndividual IRI="#Monks_Mound"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Question_Topic"/>
+        <NamedIndividual IRI="#Cahokia_elite_power_source?"/>
+        <NamedIndividual IRI="#Cahokia_elites"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Question_Topic"/>
+        <NamedIndividual IRI="#Cahokia_elite_power_source?"/>
+        <NamedIndividual IRI="#Cahokia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Leaders_of"/>
+        <NamedIndividual IRI="#Cahokia_elites"/>
+        <NamedIndividual IRI="#Cahokia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Answers_Question"/>
+        <NamedIndividual IRI="#Cahokia_on_verge_of_State"/>
+        <NamedIndividual IRI="#Cahokia_elite_power_source?"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Opposes"/>
+        <NamedIndividual IRI="#Cahokia_on_verge_of_State"/>
+        <NamedIndividual IRI="#Cahokia_chiefdom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Cahokia_on_verge_of_State"/>
+        <NamedIndividual IRI="#Cahokia_elites"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Cahokia_on_verge_of_State"/>
+        <NamedIndividual IRI="#Cahokia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Cahokia_on_verge_of_State"/>
+        <NamedIndividual IRI="#State"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Cahokia_on_verge_of_State"/>
+        <NamedIndividual IRI="#American_Bottom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Cahokia_on_verge_of_State"/>
+        <NamedIndividual IRI="#Chiefdom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#have_Power_Source"/>
+        <NamedIndividual IRI="#Cahokia_on_verge_of_State"/>
+        <NamedIndividual IRI="#Chiefdom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#have_Power_Source"/>
+        <NamedIndividual IRI="#Cahokia_on_verge_of_State"/>
+        <NamedIndividual IRI="#State"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Center_of_ritural_and_religious_life"/>
+        <NamedIndividual IRI="#Chocoan_Network"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Center_of_ritural_and_religious_life"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Center_of_ritural_and_religious_life"/>
+        <NamedIndividual IRI="#Ritural_Function"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Center_of_ritural_and_religious_life"/>
+        <NamedIndividual IRI="#Religous_position"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Center_of_ritural_and_religious_life"/>
+        <NamedIndividual IRI="#Religious"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Center_of_ritural_and_religious_life"/>
+        <NamedIndividual IRI="#Pueblo_Bonito_Elite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Answers_Question"/>
+        <NamedIndividual IRI="#Ceremonial_Center"/>
+        <NamedIndividual IRI="#What_is_its_function?"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Opposes"/>
+        <NamedIndividual IRI="#Ceremonial_Center"/>
+        <NamedIndividual IRI="#Elite_Residence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Supported_by"/>
+        <NamedIndividual IRI="#Ceremonial_Center"/>
+        <NamedIndividual IRI="#Kivas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Ceremonial_Center"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Lived_in_Location"/>
+        <NamedIndividual IRI="#Chaco"/>
+        <NamedIndividual IRI="#Chaco_Canyon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#Center_of"/>
+        <NamedIndividual IRI="#Chaco_Canyon"/>
+        <NamedIndividual IRI="#Chocoan_Network"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Contains"/>
+        <NamedIndividual IRI="#Chaco_Canyon"/>
+        <NamedIndividual IRI="#Great_houses"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Characteristic"/>
+        <NamedIndividual IRI="#Chaco_Canyon"/>
+        <NamedIndividual IRI="#Harsh_environment"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Characteristic"/>
+        <NamedIndividual IRI="#Chaco_Canyon"/>
+        <NamedIndividual IRI="#Low_rainfall"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_located_in"/>
+        <NamedIndividual IRI="#Chaco_Canyon"/>
+        <NamedIndividual IRI="#San_Juan_Basin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Ended_by"/>
+        <NamedIndividual IRI="#Chocoan_Network"/>
+        <NamedIndividual IRI="#Drought"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Supported_by"/>
+        <NamedIndividual IRI="#Chocoan_Network"/>
+        <NamedIndividual IRI="#Room_33"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Supported_by"/>
+        <NamedIndividual IRI="#Chocoan_Network"/>
+        <NamedIndividual IRI="#System_of_roads"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Supported_by"/>
+        <NamedIndividual IRI="#Chocoan_Network"/>
+        <NamedIndividual IRI="#Room_38"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Competition_between_chiefs"/>
+        <NamedIndividual IRI="#Easter_Island"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Competition_between_chiefs"/>
+        <NamedIndividual IRI="#Easter_Island_Leaders"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Competition_between_chiefs"/>
+        <NamedIndividual IRI="#Moai"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Competitive_cycle_led_to_decimation_of_resources"/>
+        <NamedIndividual IRI="#Easter_Island"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Competitive_cycle_led_to_decimation_of_resources"/>
+        <NamedIndividual IRI="#Easter_Island_Leaders"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Competitive_cycle_led_to_decimation_of_resources"/>
+        <NamedIndividual IRI="#Competition_between_chiefs"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Competitive_cycle_led_to_decimation_of_resources"/>
+        <NamedIndividual IRI="#Moai"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Close_to"/>
+        <NamedIndividual IRI="#Cursus"/>
+        <NamedIndividual IRI="#Stonehenge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Material_Characteristic"/>
+        <NamedIndividual IRI="#Cursus"/>
+        <NamedIndividual IRI="#Earthen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Characteristic"/>
+        <NamedIndividual IRI="#Dhaka"/>
+        <NamedIndividual IRI="#Hut"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Material_Characteristic"/>
+        <NamedIndividual IRI="#Dhaka"/>
+        <NamedIndividual IRI="#Clay_and_gravel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Shape_Characteristic"/>
+        <NamedIndividual IRI="#Dhaka"/>
+        <NamedIndividual IRI="#Circle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Context of Stonehenge</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">2.8 kilometers</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#Close_to"/>
+        <NamedIndividual IRI="#Durrington_Walls"/>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Characteristic"/>
+        <NamedIndividual IRI="#Durrington_Walls"/>
+        <NamedIndividual IRI="#Series_of_houses"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Significance"/>
+        <NamedIndividual IRI="#Durrington_Walls"/>
+        <NamedIndividual IRI="#Settlement_near_Stonehenge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Context of Stonehenge</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Time_Period"/>
+        <NamedIndividual IRI="#Durrington_Walls"/>
+        <NamedIndividual IRI="#Late_Neolithic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 Development of Stonehenge - Phase 1</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Characteristic"/>
+        <NamedIndividual IRI="#Earthwork_Circle"/>
+        <NamedIndividual IRI="#Contains_animal_bones"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Material_Characteristic"/>
+        <NamedIndividual IRI="#Earthwork_Circle"/>
+        <NamedIndividual IRI="#Earthen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Shape_Characteristic"/>
+        <NamedIndividual IRI="#Earthwork_Circle"/>
+        <NamedIndividual IRI="#Circle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 Development of Stonehenge - Phase 1</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Structure_Characteristic"/>
+        <NamedIndividual IRI="#Earthwork_Circle"/>
+        <NamedIndividual IRI="#Round_ditch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Remains"/>
+        <NamedIndividual IRI="#Easter_Island"/>
+        <NamedIndividual IRI="#Moai"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Answers_Question"/>
+        <NamedIndividual IRI="#Elite_Residence"/>
+        <NamedIndividual IRI="#What_is_its_function?"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Elite_Residence"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Elite_Residence"/>
+        <NamedIndividual IRI="#Pueblo_Bonito_Elite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Answers_Question"/>
+        <NamedIndividual IRI="#Elite_Residence_and_Ceremonial_Center"/>
+        <NamedIndividual IRI="#What_is_its_function?"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Elite_Residence_and_Ceremonial_Center"/>
+        <NamedIndividual IRI="#Ceremonial_Center"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Elite_Residence_and_Ceremonial_Center"/>
+        <NamedIndividual IRI="#Elite_Residence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Elite_Residence_and_Ceremonial_Center"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Traded_on"/>
+        <NamedIndividual IRI="#Food"/>
+        <NamedIndividual IRI="#Chocoan_Network"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Development of Stonehenge - Phase 3a</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Glacial_Theory"/>
+        <NamedIndividual IRI="#Bluestones"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Close_to"/>
+        <NamedIndividual IRI="#Grand_Plaza"/>
+        <NamedIndividual IRI="#Monks_Mound"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Close_to"/>
+        <NamedIndividual IRI="#Grand_Plaza"/>
+        <NamedIndividual IRI="#Mounds"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Purpose"/>
+        <NamedIndividual IRI="#Grand_Plaza"/>
+        <NamedIndividual IRI="#Feast"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_located_in"/>
+        <NamedIndividual IRI="#Grand_Plaza"/>
+        <NamedIndividual IRI="#American_Bottom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Structure"/>
+        <NamedIndividual IRI="#Great_Enclosure"/>
+        <NamedIndividual IRI="#Tower"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Material_Characteristic"/>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+        <NamedIndividual IRI="#Granite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Purpose"/>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+        <NamedIndividual IRI="#Elite_Residence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Remains"/>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+        <NamedIndividual IRI="#Beads"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Remains"/>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+        <NamedIndividual IRI="#Pottery"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Structure"/>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+        <NamedIndividual IRI="#Hill_Complex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Structure"/>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+        <NamedIndividual IRI="#Dhaka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Structure"/>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+        <NamedIndividual IRI="#Great_Enclosure"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Structure_Characteristic"/>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+        <NamedIndividual IRI="#Enclosures"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Structure_Characteristic"/>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+        <NamedIndividual IRI="#Walls"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_located_in"/>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+        <NamedIndividual IRI="#Great_Zimbabwe_region"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Leaders_of"/>
+        <NamedIndividual IRI="#Great_Zimbabwe_Elite"/>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#have_Power_Source"/>
+        <NamedIndividual IRI="#Great_Zimbabwe_Elite"/>
+        <NamedIndividual IRI="#Trade_Routes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Location_Characteristic"/>
+        <NamedIndividual IRI="#Great_Zimbabwe_region"/>
+        <NamedIndividual IRI="#Rich_in_mineral_resources"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Location_Characteristic"/>
+        <NamedIndividual IRI="#Great_Zimbabwe_region"/>
+        <NamedIndividual IRI="#Agriculturally_productive"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_located_in"/>
+        <NamedIndividual IRI="#Great_Zimbabwe_region"/>
+        <NamedIndividual IRI="#Zimbabwe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Ended_by"/>
+        <NamedIndividual IRI="#Great_houses"/>
+        <NamedIndividual IRI="#Drought"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#built_in"/>
+        <NamedIndividual IRI="#Great_houses"/>
+        <NamedIndividual IRI="#Chaco_Canyon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Characteristic"/>
+        <NamedIndividual IRI="#Great_houses"/>
+        <NamedIndividual IRI="#Multistoried"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Purpose"/>
+        <NamedIndividual IRI="#Hill_Complex"/>
+        <NamedIndividual IRI="#Settlement"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Purpose"/>
+        <NamedIndividual IRI="#Hill_Complex"/>
+        <NamedIndividual IRI="#Ritural_Function"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Traded_on"/>
+        <NamedIndividual IRI="#Jet"/>
+        <NamedIndividual IRI="#Chocoan_Network"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Purpose"/>
+        <NamedIndividual IRI="#Kivas"/>
+        <NamedIndividual IRI="#Religious"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Purpose"/>
+        <NamedIndividual IRI="#Kivas"/>
+        <NamedIndividual IRI="#Ritural_Function"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Shape_Characteristic"/>
+        <NamedIndividual IRI="#Kivas"/>
+        <NamedIndividual IRI="#Circle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Structure_Characteristic"/>
+        <NamedIndividual IRI="#Kivas"/>
+        <NamedIndividual IRI="#Subterranean"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Answers_Question"/>
+        <NamedIndividual IRI="#Large_Settlement"/>
+        <NamedIndividual IRI="#What_is_its_function?"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Large_Settlement"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Traded_on"/>
+        <NamedIndividual IRI="#Macaws"/>
+        <NamedIndividual IRI="#Chocoan_Network"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Structure_Characteristic"/>
+        <NamedIndividual IRI="#Mapungubwe"/>
+        <NamedIndividual IRI="#Enclosures"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Structure_Characteristic"/>
+        <NamedIndividual IRI="#Mapungubwe"/>
+        <NamedIndividual IRI="#Walls"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_located_in"/>
+        <NamedIndividual IRI="#Mapungubwe"/>
+        <NamedIndividual IRI="#Northeastern_South_Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Leaders_of"/>
+        <NamedIndividual IRI="#Mapungubwe_Leaders"/>
+        <NamedIndividual IRI="#Mapungubwe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#have_Power_Source"/>
+        <NamedIndividual IRI="#Mapungubwe_Leaders"/>
+        <NamedIndividual IRI="#Religous_position"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Characteristic"/>
+        <NamedIndividual IRI="#Moai"/>
+        <NamedIndividual IRI="#Large"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Material_Characteristic"/>
+        <NamedIndividual IRI="#Moai"/>
+        <NamedIndividual IRI="#Stone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#Close_to"/>
+        <NamedIndividual IRI="#Monks_Mound"/>
+        <NamedIndividual IRI="#Grand_Plaza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#built_in"/>
+        <NamedIndividual IRI="#Monks_Mound"/>
+        <NamedIndividual IRI="#Cahokia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Material_Characteristic"/>
+        <NamedIndividual IRI="#Monks_Mound"/>
+        <NamedIndividual IRI="#Earthen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Burried_with"/>
+        <NamedIndividual IRI="#Mound_51"/>
+        <NamedIndividual IRI="#Pottery"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Close_to"/>
+        <NamedIndividual IRI="#Mound_51"/>
+        <NamedIndividual IRI="#Grand_Plaza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Material_Characteristic"/>
+        <NamedIndividual IRI="#Mound_51"/>
+        <NamedIndividual IRI="#Earthen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Significance"/>
+        <NamedIndividual IRI="#Mound_51"/>
+        <NamedIndividual IRI="#Feast"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Burried_with"/>
+        <NamedIndividual IRI="#Mound_72"/>
+        <NamedIndividual IRI="#Beads"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Burried_with"/>
+        <NamedIndividual IRI="#Mound_72"/>
+        <NamedIndividual IRI="#Arrowheads"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Burried_with"/>
+        <NamedIndividual IRI="#Mound_72"/>
+        <NamedIndividual IRI="#Other_decorations"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#Burried_with"/>
+        <NamedIndividual IRI="#Mound_72"/>
+        <NamedIndividual IRI="#Human_sacrifice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Close_to"/>
+        <NamedIndividual IRI="#Mound_72"/>
+        <NamedIndividual IRI="#Grand_Plaza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Material_Characteristic"/>
+        <NamedIndividual IRI="#Mound_72"/>
+        <NamedIndividual IRI="#Earthen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Significance"/>
+        <NamedIndividual IRI="#Mound_72"/>
+        <NamedIndividual IRI="#Evidence_of_elites"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Significance"/>
+        <NamedIndividual IRI="#Mound_72"/>
+        <NamedIndividual IRI="#Evidence_of_a_Chiefdom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Material_Characteristic"/>
+        <NamedIndividual IRI="#Mounds"/>
+        <NamedIndividual IRI="#Earthen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_located_in"/>
+        <NamedIndividual IRI="#Northeastern_South_Africa"/>
+        <NamedIndividual IRI="#Southeast_Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Palace_of_the_Queen_of_Sheba"/>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 Development of Stonehenge - Phase 1</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Structure"/>
+        <NamedIndividual IRI="#Phase_1:_Earthwork_Circle"/>
+        <NamedIndividual IRI="#Aubrey_holes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 Development of Stonehenge - Phase 1</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Structure"/>
+        <NamedIndividual IRI="#Phase_1:_Earthwork_Circle"/>
+        <NamedIndividual IRI="#Earthwork_Circle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 Development of Stonehenge - Phase 1</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Time_Period"/>
+        <NamedIndividual IRI="#Phase_1:_Earthwork_Circle"/>
+        <NamedIndividual IRI="#Late_Neolithic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 Development of Stonehenge - Phase 1</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Time_Period"/>
+        <NamedIndividual IRI="#Phase_1:_Earthwork_Circle"/>
+        <NamedIndividual IRI="#5000_Years_Ago"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 Development of Stonehenge - Phase 2</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Structure"/>
+        <NamedIndividual IRI="#Phase_2:_Burials_and_a_Timber_Structure"/>
+        <NamedIndividual IRI="#Timber_Pots"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 Development of Stonehenge - Phase 2</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Time_Period"/>
+        <NamedIndividual IRI="#Phase_2:_Burials_and_a_Timber_Structure"/>
+        <NamedIndividual IRI="#Late_Neolithic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 Development of Stonehenge - Phase 2</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Human remains found in holes</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#removed_Structure"/>
+        <NamedIndividual IRI="#Phase_2:_Burials_and_a_Timber_Structure"/>
+        <NamedIndividual IRI="#Aubrey_holes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 Development of Stonehenge - Phase 2</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Human remains found in ditch</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#removed_Structure"/>
+        <NamedIndividual IRI="#Phase_2:_Burials_and_a_Timber_Structure"/>
+        <NamedIndividual IRI="#Earthwork_Circle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Stage"/>
+        <NamedIndividual IRI="#Phase_3:_Stone_Monument"/>
+        <NamedIndividual IRI="#Phase_3a:_Bluestones"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Development of Stonhenge - Phase 3</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Time_Period"/>
+        <NamedIndividual IRI="#Phase_3:_Stone_Monument"/>
+        <NamedIndividual IRI="#Early_Bronze_Age"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Development of Stonhenge - Phase 3a</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Structure"/>
+        <NamedIndividual IRI="#Phase_3a:_Bluestones"/>
+        <NamedIndividual IRI="#Bluestones"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Time_Period"/>
+        <NamedIndividual IRI="#Phase_3a:_Bluestones"/>
+        <NamedIndividual IRI="#Early_Bronze_Age"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Development of Stonehenge - Phase 3b</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Structure"/>
+        <NamedIndividual IRI="#Phase_3b:_Sarsen_Circle_and_Trilithons"/>
+        <NamedIndividual IRI="#Trilithons"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Development of Stonehenge - Phase 3b</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Structure"/>
+        <NamedIndividual IRI="#Phase_3b:_Sarsen_Circle_and_Trilithons"/>
+        <NamedIndividual IRI="#Sarsen_Circle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Time_Period"/>
+        <NamedIndividual IRI="#Phase_3b:_Sarsen_Circle_and_Trilithons"/>
+        <NamedIndividual IRI="#Early_Bronze_Age"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Time_Period"/>
+        <NamedIndividual IRI="#Phase_3c-f:_Rearranging_Bluestones_and_Digging_Holes"/>
+        <NamedIndividual IRI="#Early_Bronze_Age"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Supported_by"/>
+        <NamedIndividual IRI="#Political_Leadership"/>
+        <NamedIndividual IRI="#Massive"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Political_Leadership"/>
+        <NamedIndividual IRI="#Pueblo_Bonito_Elite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Political_Leadership"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Traded_on"/>
+        <NamedIndividual IRI="#Pottery"/>
+        <NamedIndividual IRI="#Chocoan_Network"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Ended_by"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+        <NamedIndividual IRI="#Drought"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Characteristic"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+        <NamedIndividual IRI="#Marvel_of_engineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Purpose"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+        <NamedIndividual IRI="#Elite_Residence_and_Ceremonial_Center"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Question"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+        <NamedIndividual IRI="#What_is_its_function?"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Remains"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+        <NamedIndividual IRI="#Room_33"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Remains"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+        <NamedIndividual IRI="#Room_38"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Remains"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+        <NamedIndividual IRI="#Ceramics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Shape_Characteristic"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+        <NamedIndividual IRI="#Semicircle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Structure"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+        <NamedIndividual IRI="#Kivas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Structure_Characteristic"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+        <NamedIndividual IRI="#Large"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Structure_Characteristic"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+        <NamedIndividual IRI="#Multistoried"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#is_located_in"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+        <NamedIndividual IRI="#Chaco_Canyon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Leaders_of"/>
+        <NamedIndividual IRI="#Pueblo_Bonito_Elite"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#have_Power_Source"/>
+        <NamedIndividual IRI="#Pueblo_Bonito_Elite"/>
+        <NamedIndividual IRI="#Religous_position"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#have_Power_Source"/>
+        <NamedIndividual IRI="#Pueblo_Bonito_Elite"/>
+        <NamedIndividual IRI="#Trade_Routes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Supported_by"/>
+        <NamedIndividual IRI="#Religious_importance_of_birds"/>
+        <NamedIndividual IRI="#Mound_51"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Supported_by"/>
+        <NamedIndividual IRI="#Religious_importance_of_birds"/>
+        <NamedIndividual IRI="#Mound_72"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Religious_importance_of_birds"/>
+        <NamedIndividual IRI="#Cahokia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Burried_with"/>
+        <NamedIndividual IRI="#Room_33"/>
+        <NamedIndividual IRI="#Turquoise"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Burried_with"/>
+        <NamedIndividual IRI="#Room_33"/>
+        <NamedIndividual IRI="#Beads"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Burried_with"/>
+        <NamedIndividual IRI="#Room_33"/>
+        <NamedIndividual IRI="#Other_decorations"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Burried_with"/>
+        <NamedIndividual IRI="#Room_33"/>
+        <NamedIndividual IRI="#Jet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Significance"/>
+        <NamedIndividual IRI="#Room_33"/>
+        <NamedIndividual IRI="#Evidence_of_elites"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Burried_with"/>
+        <NamedIndividual IRI="#Room_38"/>
+        <NamedIndividual IRI="#Other_decorations"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Burried_with"/>
+        <NamedIndividual IRI="#Room_38"/>
+        <NamedIndividual IRI="#Jet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Burried_with"/>
+        <NamedIndividual IRI="#Room_38"/>
+        <NamedIndividual IRI="#Macaws"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Burried_with"/>
+        <NamedIndividual IRI="#Room_38"/>
+        <NamedIndividual IRI="#Beads"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Significance"/>
+        <NamedIndividual IRI="#Room_38"/>
+        <NamedIndividual IRI="#Evidence_of_elites"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#is_located_in"/>
+        <NamedIndividual IRI="#Salisbury_Plain"/>
+        <NamedIndividual IRI="#Southern_England"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Structure"/>
+        <NamedIndividual IRI="#Salisbury_Plain_Area"/>
+        <NamedIndividual IRI="#Durrington_Walls"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Structure"/>
+        <NamedIndividual IRI="#Salisbury_Plain_Area"/>
+        <NamedIndividual IRI="#Stonehenge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 A Constructed Landscape</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Structure"/>
+        <NamedIndividual IRI="#Salisbury_Plain_Area"/>
+        <NamedIndividual IRI="#Cursus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Structure"/>
+        <NamedIndividual IRI="#Salisbury_Plain_Area"/>
+        <NamedIndividual IRI="#The_Avenue"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 A Constructed Landscape</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Time_Period"/>
+        <NamedIndividual IRI="#Salisbury_Plain_Area"/>
+        <NamedIndividual IRI="#Late_Neolithic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 A Constructed Landscape</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Time_Period"/>
+        <NamedIndividual IRI="#Salisbury_Plain_Area"/>
+        <NamedIndividual IRI="#Early_Bronze_Age"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 A Constructed Landscape</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#is_located_in"/>
+        <NamedIndividual IRI="#Salisbury_Plain_Area"/>
+        <NamedIndividual IRI="#Salisbury_Plain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_located_in"/>
+        <NamedIndividual IRI="#San_Juan_Basin"/>
+        <NamedIndividual IRI="#New_Mexico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Development of Stonehenge - Phase 3b</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Characteristic"/>
+        <NamedIndividual IRI="#Sarsen_Circle"/>
+        <NamedIndividual IRI="#Massive"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Characteristic"/>
+        <NamedIndividual IRI="#Sarsen_Circle"/>
+        <NamedIndividual IRI="#Center_area_of_Stonehenge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Material_Characteristic"/>
+        <NamedIndividual IRI="#Sarsen_Circle"/>
+        <NamedIndividual IRI="#Sarsen_Stone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Material_Characteristic"/>
+        <NamedIndividual IRI="#Sarsen_Circle"/>
+        <NamedIndividual IRI="#Stone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Shape_Characteristic"/>
+        <NamedIndividual IRI="#Sarsen_Circle"/>
+        <NamedIndividual IRI="#Circle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Development of Stonehenge - Phase 3b</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Structure_Characteristic"/>
+        <NamedIndividual IRI="#Sarsen_Circle"/>
+        <NamedIndividual IRI="#Capped_by_lintels"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_located_in"/>
+        <NamedIndividual IRI="#Southern_England"/>
+        <NamedIndividual IRI="#England"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Material_Characteristic"/>
+        <NamedIndividual IRI="#Stonehenge"/>
+        <NamedIndividual IRI="#Stone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Shape_Characteristic"/>
+        <NamedIndividual IRI="#Stonehenge"/>
+        <NamedIndividual IRI="#Ring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Structure_Characteristic"/>
+        <NamedIndividual IRI="#Stonehenge"/>
+        <NamedIndividual IRI="#Marvel_of_engineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Structure_Characteristic"/>
+        <NamedIndividual IRI="#Stonehenge"/>
+        <NamedIndividual IRI="#Standing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#is_located_in"/>
+        <NamedIndividual IRI="#Stonehenge"/>
+        <NamedIndividual IRI="#Salisbury_Plain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Supported_by"/>
+        <NamedIndividual IRI="#Stonehenge_Chiefdom"/>
+        <NamedIndividual IRI="#Amesbury_Archer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Archaeologist"/>
+        <NamedIndividual IRI="#Stonehenge_Chiefdom"/>
+        <NamedIndividual IRI="#Colin_Renfrew"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Stonehenge_Chiefdom"/>
+        <NamedIndividual IRI="#Stonehenge_Leaders"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Stonehenge_Chiefdom"/>
+        <NamedIndividual IRI="#Chiefdom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Stonehenge_Chiefdom"/>
+        <NamedIndividual IRI="#Salisbury_Plain_Area"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Stonehenge_Chiefdom"/>
+        <NamedIndividual IRI="#Stonehenge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Stonehenge_Chiefdom"/>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Constructed"/>
+        <NamedIndividual IRI="#Stonehenge_Leaders"/>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Leaders_of"/>
+        <NamedIndividual IRI="#Stonehenge_Leaders"/>
+        <NamedIndividual IRI="#Stonehenge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#have_Power_Source"/>
+        <NamedIndividual IRI="#Stonehenge_Leaders"/>
+        <NamedIndividual IRI="#Redistrubution_of_surplus_goods"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#have_Power_Source"/>
+        <NamedIndividual IRI="#Stonehenge_Leaders"/>
+        <NamedIndividual IRI="#Inherited_position"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#Variously_Attributed"/>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+        <NamedIndividual IRI="#Greeks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#Variously_Attributed"/>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+        <NamedIndividual IRI="#Romans"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#Variously_Attributed"/>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+        <NamedIndividual IRI="#Druids"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#Variously_Attributed"/>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+        <NamedIndividual IRI="#Danes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Characteristic"/>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+        <NamedIndividual IRI="#No_domestic_remains"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Purpose"/>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+        <NamedIndividual IRI="#Ritural_Function"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Context of Stonehenge</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Purpose"/>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+        <NamedIndividual IRI="#Religious"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Question"/>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+        <NamedIndividual IRI="#What_is_its_function?"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Significance"/>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+        <NamedIndividual IRI="#Ability_to_organize_a_large_group"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Development of Stonehenge</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Stage"/>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+        <NamedIndividual IRI="#Phase_1:_Earthwork_Circle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Development of Stonehenge</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Stage"/>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+        <NamedIndividual IRI="#Phase_3:_Stone_Monument"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Development of Stonehenge - Phase 3c-f</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Stage"/>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+        <NamedIndividual IRI="#Phase_3c-f:_Rearranging_Bluestones_and_Digging_Holes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Development of Stonehenge</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Stage"/>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+        <NamedIndividual IRI="#Phase_3b:_Sarsen_Circle_and_Trilithons"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Development of Stonehenge</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Stage"/>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+        <NamedIndividual IRI="#Phase_2:_Burials_and_a_Timber_Structure"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Structure"/>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+        <NamedIndividual IRI="#Stonehenge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Context of Stonehenge</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Theory"/>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+        <NamedIndividual IRI="#To_predict_celestial_events"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 Development of Stonehenge
+
+</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#has_Time_Period"/>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+        <NamedIndividual IRI="#Late_Neolithic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#is_located_in"/>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+        <NamedIndividual IRI="#Salisbury_Plain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Road_from"/>
+        <NamedIndividual IRI="#System_of_roads"/>
+        <NamedIndividual IRI="#Chaco_Canyon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Road_from"/>
+        <NamedIndividual IRI="#System_of_roads"/>
+        <NamedIndividual IRI="#Great_houses"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Road_to"/>
+        <NamedIndividual IRI="#System_of_roads"/>
+        <NamedIndividual IRI="#Four_Corners_region"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Road_to"/>
+        <NamedIndividual IRI="#System_of_roads"/>
+        <NamedIndividual IRI="#Great_houses"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Significance"/>
+        <NamedIndividual IRI="#System_of_roads"/>
+        <NamedIndividual IRI="#Chocoan_Network"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_located_in"/>
+        <NamedIndividual IRI="#System_of_roads"/>
+        <NamedIndividual IRI="#Chaco_Canyon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_located_in"/>
+        <NamedIndividual IRI="#System_of_roads"/>
+        <NamedIndividual IRI="#Four_Corners_region"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Opposes"/>
+        <NamedIndividual IRI="#Taxes_backed_by_threat_of_force"/>
+        <NamedIndividual IRI="#Center_of_ritural_and_religious_life"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Taxes_backed_by_threat_of_force"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Taxes_backed_by_threat_of_force"/>
+        <NamedIndividual IRI="#Chocoan_Network"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <NamedIndividual IRI="#Taxes_backed_by_threat_of_force"/>
+        <NamedIndividual IRI="#Pueblo_Bonito_Elite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Close_to"/>
+        <NamedIndividual IRI="#The_Avenue"/>
+        <NamedIndividual IRI="#Stonehenge_Site"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Road_from"/>
+        <NamedIndividual IRI="#The_Avenue"/>
+        <NamedIndividual IRI="#Avon_River"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Road_to"/>
+        <NamedIndividual IRI="#The_Avenue"/>
+        <NamedIndividual IRI="#Stonehenge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Purpose"/>
+        <NamedIndividual IRI="#The_Avenue"/>
+        <NamedIndividual IRI="#Guide_people_to_Stonehenge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Material_Characteristic"/>
+        <NamedIndividual IRI="#Timber_Pots"/>
+        <NamedIndividual IRI="#Timber"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Structure_Characteristic"/>
+        <NamedIndividual IRI="#Timber_Pots"/>
+        <NamedIndividual IRI="#Standing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Answers_Question"/>
+        <NamedIndividual IRI="#To_predict_celestial_events"/>
+        <NamedIndividual IRI="#What_is_its_function?"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Material_Characteristic"/>
+        <NamedIndividual IRI="#Tower"/>
+        <NamedIndividual IRI="#Stone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Opposes"/>
+        <NamedIndividual IRI="#Transported_by_humans"/>
+        <NamedIndividual IRI="#Glacial_Theory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Characteristic"/>
+        <NamedIndividual IRI="#Trilithons"/>
+        <NamedIndividual IRI="#3_pairs"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Characteristic"/>
+        <NamedIndividual IRI="#Trilithons"/>
+        <NamedIndividual IRI="#Inside_Sarsen_Circle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Material_Characteristic"/>
+        <NamedIndividual IRI="#Trilithons"/>
+        <NamedIndividual IRI="#Sarsen_Stone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Shape_Characteristic"/>
+        <NamedIndividual IRI="#Trilithons"/>
+        <NamedIndividual IRI="#Horseshoe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Structure_Characteristic"/>
+        <NamedIndividual IRI="#Trilithons"/>
+        <NamedIndividual IRI="#Capped_by_lintels"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Structure_Characteristic"/>
+        <NamedIndividual IRI="#Trilithons"/>
+        <NamedIndividual IRI="#Upright"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Traded_on"/>
+        <NamedIndividual IRI="#Turquoise"/>
+        <NamedIndividual IRI="#Chocoan_Network"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Characteristic"/>
+        <NamedIndividual IRI="#Turquoise"/>
+        <NamedIndividual IRI="#Traded_over_long_distances"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_located_in"/>
+        <NamedIndividual IRI="#Zimbabwe"/>
+        <NamedIndividual IRI="#Southeast_Africa"/>
+    </ObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Characteristic"/>
+        <NamedIndividual IRI="#Easter_Island"/>
+        <NamedIndividual IRI="#Large_Settlement"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#have_Power_Source"/>
+        <NamedIndividual IRI="#Stonehenge_Leaders"/>
+        <NamedIndividual IRI="#State_bureaucracy"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#have_Power_Source"/>
+        <NamedIndividual IRI="#Stonehenge_Leaders"/>
+        <NamedIndividual IRI="#Force"/>
+    </NegativeObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Supported_by"/>
+        <NamedIndividual IRI="#Agricultural_Surplus"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Construction started during an increase in rainfall</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Supported_by"/>
+        <NamedIndividual IRI="#Agricultural_Surplus"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Competition led ot construction of Great Houses</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Supported_by"/>
+        <NamedIndividual IRI="#Agricultural_Surplus"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Accumulation of surpluses led to cycle of competition</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#American_Bottom"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Contains wetlands</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#American_Bottom"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Contains streams</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#American_Bottom"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Near St. Louis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#American_Bottom"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Contains swamps</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#American_Bottom"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">In the floodplain of the Mississippi River</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Amesbury_Archer"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Lived during Phase 3c-f</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Aubrey_holes"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ring of hole dug along the inside of ditch</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Bluestones"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">From Wales</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Bluestones"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">in Q and R holes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Bluestones"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">From 240 Kilometers away</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Height"/>
+        <NamedIndividual IRI="#Bluestones"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2-2.5 meters</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Bufffered_risk_in_uncertian_environment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Use network to trade for food in case of crop failure</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Bufffered_risk_in_uncertian_environment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Low rainfall led to constant risk of local crop failure</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Population"/>
+        <NamedIndividual IRI="#Cahokia"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">4000-40000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <DataProperty IRI="#Significance"/>
+        <NamedIndividual IRI="#Cahokia"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Largest known settlement of the Mississippian Period in Eastern North America</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Cahokia"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Poorly preserved</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Cahokia"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Contains bone remains</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Size"/>
+        <NamedIndividual IRI="#Cahokia"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">4.5 kilometers</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Year_Period"/>
+        <NamedIndividual IRI="#Cahokia"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1000-1400 AD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Cahokia_chiefdom"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Limited power</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Cahokia_chiefdom"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Many competing chiefdoms</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Cahokia_on_verge_of_State"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cheifdom on verge of state</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Cahokia_on_verge_of_State"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ruled surrounding settlements in the American Bottom</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Capped_by_lintels"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Fitted together with carved joints</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Center_of_ritural_and_religious_life"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cycles of ceremonial feasting brought goods</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Ceremonial_Center"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Large number of Kivas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Ceremonial_Center"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Construction expanded</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Ceremonial_Center"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Rarely had population of more than 100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Year_Period"/>
+        <NamedIndividual IRI="#Ceremonial_Center"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1000 AD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Depth"/>
+        <NamedIndividual IRI="#Chaco_Canyon"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">90-180 meters</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Chaco_Canyon"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sparse rainfall, vegetation, surface water, and game</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Chaco_Canyon"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Chaco built dams and canals to control runoff water</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Length"/>
+        <NamedIndividual IRI="#Chaco_Canyon"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">30 kilometers</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Width"/>
+        <NamedIndividual IRI="#Chaco_Canyon"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0.5-1 kilometer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Supported_by"/>
+        <NamedIndividual IRI="#Chocoan_Network"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Similarities in architecture</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Year_Period"/>
+        <NamedIndividual IRI="#Chocoan_Network"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">800 - 1100 AD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Competition_between_chiefs"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">During periods of prosperity</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Competition_between_chiefs"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Competition between chiefs</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Competitive_cycle_led_to_decimation_of_resources"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Caused increased levels of violence</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Competitive_cycle_led_to_decimation_of_resources"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Deforestation</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Competitive_cycle_led_to_decimation_of_resources"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Decimation of resources</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">10.1 A Constructed Landscape</Literal>
+        </Annotation>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Cursus"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Slightly raised earthen platform</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Length"/>
+        <NamedIndividual IRI="#Cursus"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">3 kilometers</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Dhaka"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Frequently rebuilt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Year_Period"/>
+        <NamedIndividual IRI="#Drought"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1130 AD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Earthwork_Circle"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Slight embankments on both sides of ditch</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Earthwork_Circle"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Encolose 110 meters in diameter</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Easter_Island"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Isolated</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Easter_Island"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">No material wealth</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Elite_Residence"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Before expansion</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Year_Period"/>
+        <NamedIndividual IRI="#Elite_Residence"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">800-1000 AD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Theory_says"/>
+        <NamedIndividual IRI="#Glacial_Theory"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bluestones moved by glacial activity</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Grand_Plaza"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">30,000 person feasts</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Grand_Plaza"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cleared and leveled</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Great_Enclosure"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">40 dhaka huts</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Great_Enclosure"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Southern hill</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Great_Enclosure"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Expansion</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Length"/>
+        <NamedIndividual IRI="#Great_Enclosure"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">100 meters</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Population"/>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1000-18000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Significance"/>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">More trade items than anywhere in region</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Significance"/>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Elite playd critical role in the trade netowrks from Southern Africa gold mines to China</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Beads from Syria</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Walls not defensive</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Walls to screen activities of elites</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pottery from Iran and China</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10 meter high walls</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Covers two hills</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <DataProperty IRI="#has_Year_Period"/>
+        <NamedIndividual IRI="#Great_Zimbabwe"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1300-1450 AD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Great_Zimbabwe_region"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Capable of supporting large herds of cattle</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Great_Zimbabwe_region"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Rich in gold</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Hill_Complex"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">20 dhaka huts</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Hill_Complex"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Earliest occupation</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Hill_Complex"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Northern hill</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Length"/>
+        <NamedIndividual IRI="#Hill_Complex"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">30 meters</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Refuted_by"/>
+        <NamedIndividual IRI="#Large_Settlement"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Small number of fireplaces
+</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Refuted_by"/>
+        <NamedIndividual IRI="#Large_Settlement"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Few domestic remains</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Construction_Started"/>
+        <NamedIndividual IRI="#Mapungubwe"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Earliest evidence of large enclosures</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Construction_Started"/>
+        <NamedIndividual IRI="#Mapungubwe"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1250 AD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Significance"/>
+        <NamedIndividual IRI="#Mapungubwe"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sheds light on Great Zimbabwe</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Year_Period"/>
+        <NamedIndividual IRI="#Mapungubwe"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1220 AD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Mapungubwe_Leaders"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Took on rain-making powers</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Moai"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Heads</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Significance"/>
+        <NamedIndividual IRI="#Monks_Mound"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unparalled size</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Monks_Mound"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">South of Cahokia Creek</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Monks_Mound"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Four terraces</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Monks_Mound"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Contains over 600,000 cubic meters of dirt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Height"/>
+        <NamedIndividual IRI="#Monks_Mound"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">30 meters</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Size"/>
+        <NamedIndividual IRI="#Monks_Mound"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">60,000 square meters</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Significance"/>
+        <NamedIndividual IRI="#Mound_51"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Layers of botanical and faunal remains</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Mound_51"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">5000 deer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Mound_51"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">18000 pots</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Mound_51"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">half-million tobacco seeds</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Mound_51"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bird bones</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Significance"/>
+        <NamedIndividual IRI="#Mound_72"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Elites control lives of subjects</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Mound_72"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hundreds of arrowheads</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Mound_72"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Burried with a rich array of goods</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Mound_72"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Burial complex</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Mound_72"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bird shaped platform</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Mound_72"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Man</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Mound_72"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Burried with 4 headless and handless men</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Mound_72"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">20000 cut shell beads</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Mound_72"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Burried with 50 young women</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Palace_of_the_Queen_of_Sheba"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">False</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Year_Period"/>
+        <NamedIndividual IRI="#Phase_2:_Burials_and_a_Timber_Structure"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">5000-4500 years ago</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Year_Period"/>
+        <NamedIndividual IRI="#Phase_3:_Stone_Monument"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">4500-3500 years ago</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Supported_by"/>
+        <NamedIndividual IRI="#Political_Leadership"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Scale of construction of Pubelo Bonito</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Construction_Ended"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1000-1100 AD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Construction_Started"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">800 AD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Occupation_Ended"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1250 AD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <DataProperty IRI="#Population"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">100-1200 People</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Significance"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Took 8000 person hours to construct</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <DataProperty IRI="#Significance"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Largest Great House</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ceremonial feasting</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Rooms"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">650</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Size"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2 acres</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Year_Period"/>
+        <NamedIndividual IRI="#Pueblo_Bonito"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">800 AD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Pueblo_Bonito_Elite"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Held some control over trade networks</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Room_33"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2 males</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Room_33"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Contained 50,000 pieces of turquoise beads, pendants, and mosaic inlays</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Room_38"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">14 Macaws</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Room_38"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Beads, pendants, and jet mosaic </Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+        </Annotation>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Salisbury_Plain_Area"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Contains many monuments</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Stonehenge"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ring of massive standing stones</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#Stonehenge_Chiefdom"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Increasing scale of monument reflects increasing size of territories under control</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#System_of_roads"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Extended beyond the canyon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Length"/>
+        <NamedIndividual IRI="#System_of_roads"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">200 miles</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Refuted_by"/>
+        <NamedIndividual IRI="#Taxes_backed_by_threat_of_force"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">No evidence of central authority</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Description"/>
+        <NamedIndividual IRI="#The_Avenue"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">path bounded by ditchs and embankments</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Diameter"/>
+        <NamedIndividual IRI="#Tower"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">5 meters</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Height"/>
+        <NamedIndividual IRI="#Tower"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10 meters</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Height"/>
+        <NamedIndividual IRI="#Trilithons"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">7 meters</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Answers_Question"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Burried_with"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Center_of"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Close_to"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Constructed"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Contains"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Ended_by"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Found_in"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Leaders_of"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Lived_in_Location"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Opposes"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Road_from"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Road_to"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Supported_by"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Traded_on"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Variously_Attributed"/>
+        <ObjectProperty IRI="#has_Occupier"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Variously_Attributed"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="#Constructed"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#built_in"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Archaeologist"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Characteristic"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_End_Occupation_Date"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Implication"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Location_Characteristic"/>
+        <ObjectProperty IRI="#has_Characteristic"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Material_Characteristic"/>
+        <ObjectProperty IRI="#has_Characteristic"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Occupier"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Purpose"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Question"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Question_Topic"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Remains"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Shape_Characteristic"/>
+        <ObjectProperty IRI="#has_Characteristic"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Significance"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Stage"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Structure"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Structure_Characteristic"/>
+        <ObjectProperty IRI="#has_Characteristic"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Theory"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Time_Period"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#have_Power_Source"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#removed_Structure"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Constructed"/>
+        <ObjectProperty IRI="#has_Occupier"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#is_located_in"/>
+        <ObjectProperty IRI="#Contains"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Found_in"/>
+        <ObjectProperty IRI="#has_Remains"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_Structure"/>
+        <ObjectProperty IRI="#built_in"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_Question"/>
+        <ObjectProperty IRI="#has_Question_Topic"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <ObjectProperty IRI="#has_Theory"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#Close_to"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#Opposes"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#is_located_in"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Constructed"/>
+        <Class IRI="#Peoples"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Lived_in_Location"/>
+        <Class IRI="#Peoples"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Road_from"/>
+        <Class IRI="#Road"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Road_to"/>
+        <Class IRI="#Road"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Variously_Attributed"/>
+        <Class IRI="#Archaeological_Site"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Archaeologist"/>
+        <Class IRI="#Theory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_End_Occupation_Date"/>
+        <Class IRI="#Archaeological_Site"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Implication"/>
+        <Class IRI="#Archaeological_Site"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Location_Characteristic"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Material_Characteristic"/>
+        <Class IRI="#Structure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Occupier"/>
+        <Class IRI="#Archaeological_Site"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Stage"/>
+        <Class IRI="#Archaeological_Site"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Structure"/>
+        <Class IRI="#Archaeological_Site"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Structure_Characteristic"/>
+        <Class IRI="#Structure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Theory_Topic"/>
+        <Class IRI="#Theory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Time_Period"/>
+        <Class IRI="#Archaeological_Site"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#have_Power_Source"/>
+        <Class IRI="#Leaders"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#removed_Structure"/>
+        <Class IRI="#Archaeological_Site"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Lived_in_Location"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Variously_Attributed"/>
+        <Class IRI="#Peoples"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Archaeologist"/>
+        <Class IRI="#Archaeologist"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Characteristic"/>
+        <Class IRI="#Characteristic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_End_Occupation_Date"/>
+        <Class IRI="#Time_Period"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Implication"/>
+        <Class IRI="#Theory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Location_Characteristic"/>
+        <Class IRI="#Location_Characteristic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Material_Characteristic"/>
+        <Class IRI="#Material"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Occupier"/>
+        <Class IRI="#Peoples"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Purpose"/>
+        <Class IRI="#Purpose"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Shape_Characteristic"/>
+        <Class IRI="#Shape_Characteristic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Significance"/>
+        <Class IRI="#Significance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Stage"/>
+        <Class IRI="#Archaeological_Site"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Structure"/>
+        <Class IRI="#Structure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Structure_Characteristic"/>
+        <Class IRI="#Structure_Characteristic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Theory"/>
+        <Class IRI="#Theory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Time_Period"/>
+        <Class IRI="#Time_Period"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#have_Power_Source"/>
+        <Class IRI="#Power_Source"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_located_in"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#removed_Structure"/>
+        <Class IRI="#Structure"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Construction_Ended"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Construction_Started"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
+    </SubDataPropertyOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Amesbury_Archer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Aubrey_holes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10.1 Development of Stonehenge - Phase 1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bluestones</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Development of Stonhenge - Phase 3a</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bluestones</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cahokia</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Chaco_Canyon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Chocoan_Network</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cursus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10.1 A Constructed Landscape</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Danes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dhaka</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Druids</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Durrington_Walls</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Earthwork_Circle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10.1 Development of Stonehenge - Phase 1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#England</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Glacial_Theory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Development of Stonehenge - Phase 3a</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Grand_Plaza</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Great_Zimbabwe</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Greeks</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Kivas</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mapungubwe</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Monks_Mound</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Phase_1:_Earthwork_Circle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Development of Stonehenge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Phase_2:_Burials_and_a_Timber_Structure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10.1 Development of Stonehenge - Phase 2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Phase_3:_Stone_Monument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Development of Stonhenge - Phase 3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Phase_3a:_Bluestones</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Development of Stonhenge - Phase 3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Phase_3b:_Sarsen_Circle_and_Trilithons</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Development of Stonehenge - Phase 3b</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Phase_3c-f:_Rearranging_Bluestones_and_Digging_Holes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10.1 The Development of Stonehenge - Phase 3c-f</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pueblo_Bonito</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Romans</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Salisbury_Plain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Salisbury_Plain_Area</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10.1 A Constructed Landscape</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sarsen_Circle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Southern_England</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Stonehenge</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Stonehenge_Site</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Stonehenge_Site</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Trilithons</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Important</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
