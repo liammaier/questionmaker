@@ -120,12 +120,18 @@ public class QuestionMaker {
 			
 			System.out.println(class1+ " is " +class2);
 		} else if (a.getAxiomType() ==  AxiomType.EQUIVALENT_CLASSES) {
-			String[] round1 = a.toString().replace('_', ' ').split("#");
+
+//			String type = a;
+			System.out.println(a.getObjectPropertiesInSignature());
+
+			String[] classes = a.getClassesInSignature().toString().replace('_', ' ').split("#");
 			//classes
-			String class1 = round1[1].split(">")[0];
-			String class2 = round1[2].split(">")[0];
+			String class1 = classes[1].split(">")[0];
+			String relation =  a.getObjectPropertiesInSignature().toString().replace('_', ' ').split("#")[0].split(">")[0];
+			String class2 = classes[3].split(">")[0];
 			
-			System.out.println(a.toString());
+			System.out.println("Some" + class1 + " " + relation + " " + class2);
+
 		}
 		
 		return questionMap;
